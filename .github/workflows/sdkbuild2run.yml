@@ -1,15 +1,46 @@
-- name: Run examples directly
-  working-directory: ${{ github.workspace }}
-  env:
-    CellsCloudClientId: ${{ secrets.PRODUCTCLIENTID }}
-    CellsCloudClientSecret: ${{ secrets.PRODUCTCLIENTSECRET }}
-    CellsCloudApiBaseUrl: "https://api.aspose.cloud/"
-  run: |
+name: Node.js CI
 
-    npm install ts-node
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
 
-    for file in Examples/*.ts; do
-      echo "=== run $file ==="
-      npx ts-node "$file" && echo "success" || echo "error"
-      echo ""
-    done
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      ProductClientId: ${{ secrets.PRODUCTCLIENTID }}
+      ProductClientSecret: ${{ secrets.PRODUCTCLIENTSECRET }}
+      CellsCloudApiBaseUrl: "https://api.aspose.cloud/
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "21"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run examples directly
+        run: |
+
+          npm install ts-node typescript @types/node --no-save
+
+          $env:CellsCloudClientId = $env:ProductClientId
+          $env:CellsCloudClientSecret = $env:ProductClientSecret
+
+          Get-ChildItem Examples\*.ts | ForEach-Object {
+            echo "=== run $_ ==="
+            try {
+              npx ts-node $_.FullName
+              echo "✅ $_.Name success"
+            } catch {
+              echo "⚠️  $_.Name error: $_"
+            }
+            echo ""
+          }

@@ -12,7 +12,7 @@ jobs:
     env:
       ProductClientId: ${{ secrets.PRODUCTCLIENTID }}
       ProductClientSecret: ${{ secrets.PRODUCTCLIENTSECRET }}
-      CellsCloudApiBaseUrl: "https://api.aspose.cloud/
+      CellsCloudApiBaseUrl: "https://api.aspose.cloud/"
 
     steps:
       - uses: actions/checkout@v4
@@ -28,12 +28,9 @@ jobs:
 
       - name: Run examples directly
         run: |
-
           npm install ts-node typescript @types/node --no-save
-
           $env:CellsCloudClientId = $env:ProductClientId
           $env:CellsCloudClientSecret = $env:ProductClientSecret
-
           Get-ChildItem Examples\*.ts | ForEach-Object {
             echo "=== run $_ ==="
             try {

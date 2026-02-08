@@ -1,14 +1,79 @@
 {
-    "requires": true,
-    "lockfileVersion": 1,
-    "dependencies": {
-        "@types/jest": "^26.0.24",
-        "@types/request": "^2.48.7",
-        "asposecellscloud": "25.8",
-        "axios": "^1.5.1",
-        "JSON": "^1.0.0",
-        "mocha": "^10.2.0",
-        "request": "^2.88.2",
-        "request-debug": "^0.2.0"
-    }
+  "name": "asposecellscloud",
+  "version": "26.1.0",
+  "description": "Aspose.Cells Cloud is a REST API for creating and editing Excel files. Most popular features: Excel to PDF, Convert to Image, Merge workbooks, Split worksheets, Data processing with formulas and pivot tables. It can also be used to convert spreadsheets between various formats (XLSX, CSV, JSON, ODS, HTML) without any local office software.",
+  "keywords": [
+    "excel",
+    "spreadsheet",
+    "convert",
+    "xlsx",
+    "Aspose",
+    "Cloud",
+    "Cells",
+    "PowerPoint",
+    "PPTX",
+    "PPT",
+    "Conversion",
+    "Merge",
+    "PDF",
+    "Export",
+    "Html",
+    "Css",
+    "Rest",
+    "Api",
+    "Image"
+  ],
+  "author": "Aspose Nanjing Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aspose-cells-cloud/aspose-cells-cloud-node.git"
+  },
+  "main": "dist/api.js",
+  "types": "dist/api.d.ts",
+  "scripts": {
+    "test": "cross-env JUNIT_REPORT_PATH=integration_tests_result.xml mocha -r ts-node/register test/**/*.ts --timeout 250000 --reporter mocha-jenkins-reporter",
+    "test-jenkins": "cross-env JUNIT_REPORT_PATH=reports/integration_tests_result.xml mocha -r ts-node/register test/**/*.ts --timeout 250000 --reporter mocha-jenkins-reporter",
+    "lint": "tslint src/{,**/}*.ts test/{,**/}*.ts -t verbose --project ./tsconfig.json",
+    "cucumber": "cucumber-js ./bdd/features -r ./dist/bdd/steps",
+    "gulp": "gulp"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/request": "^2.48.7",
+    "request": "^2.88.2",
+    "request-debug": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.10.66",
+    "chai": "^4.3.7",
+    "cross-env": "^5.1.4",
+    "cucumber": "^3.0.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cucumber": "0.0.23",
+    "gulp-typescript": "^2.12.2",
+    "gulp-util": "^1.0.0",
+    "mocha": "^10.2.0",
+    "mocha-cases": "^0.2.1",
+    "mocha-jenkins-reporter": "^0.4.7",
+    "mocha-sinon": "^2.0.0",
+    "sinon": "^7.0.0",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.9.2"
+  },
+  "bugs": {
+    "url": "https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/issues"
+  },
+  "homepage": "https://github.com/aspose-cells-cloud/aspose-cells-cloud-node#readme",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  }
 }

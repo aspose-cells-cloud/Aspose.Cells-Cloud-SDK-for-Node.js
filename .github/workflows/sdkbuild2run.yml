@@ -7,37 +7,51 @@ on:
     branches: ["master"]
 
 jobs:
-  build:
+  test-examples:
     runs-on: windows-latest
+
     env:
       ProductClientId: ${{ secrets.PRODUCTCLIENTID }}
       ProductClientSecret: ${{ secrets.PRODUCTCLIENTSECRET }}
-      CellsCloudApiBaseUrl: "https://api.aspose.cloud/"
 
     steps:
-      - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "21"
-          cache: "npm"
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: "21"
 
-      - name: Install dependencies
-        run: npm ci
+    - name: Install dependencies
+      run: npm install
 
-      - name: Run examples directly
-        run: |
-          npm install ts-node typescript @types/node --no-save
-          $env:CellsCloudClientId = $env:ProductClientId
-          $env:CellsCloudClientSecret = $env:ProductClientSecret
-          Get-ChildItem Examples\*.ts | ForEach-Object {
-            echo "=== run $_ ==="
-            try {
-              npx ts-node $_.FullName
-              echo "✅ $_.Name success"
-            } catch {
-              echo "⚠️  $_.Name error: $_"
-            }
-            echo ""
+    - name: Setup environment and run examples
+      run: |
+        $env:CellsCloudClientId = $env:ProductClientId
+        $env:CellsCloudClientSecret = $env:ProductClientSecret
+        $env:CellsCloudApiBaseUrl = "https://api.aspose.cloud/"
+
+        npm install ts-node typescript @types/node --no-save
+
+        $successCount = 0
+        $exampleFiles = Get-ChildItem Examples\*.ts -ErrorAction SilentlyContinue
+
+
+        foreach ($file in $exampleFiles) {
+          Write-Host "`n=== run: $($file.Name) ===" -ForegroundColor Cyan
+
+          try {
+            npx ts-node $file.FullName
+            Write-Host "success" -ForegroundColor Green
+            $successCount++
+          } catch {
+            Write-Host "error: $($_.Exception.Message)" -ForegroundColor Red
           }
+        }
+
+        Write-Host "success: $successCount/$($exampleFiles.Count)"
+
+        if ($successCount -lt $exampleFiles.Count) {
+          exit 1
+        }

@@ -1,0 +1,2137 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="Calculate test aggregate_cells_by_color test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:14" time="3.339">
+    <testcase classname="Calculate test aggregate_cells_by_color test" name="should call AggregateCellsByColor successfully" time="3.337">
+    </testcase>
+  </testsuite>
+  <testsuite name="Calculate test math_calculate test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:17" time="1.633">
+    <testcase classname="Calculate test math_calculate test" name="should call MathCalculate successfully" time="1.631">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test get_worksheet_auto_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:19" time="3.233">
+    <testcase classname="AutoFilterController test get_worksheet_auto_filter test" name="should call GetWorksheetAutoFilter successfully" time="3.233">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test put_worksheet_date_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:22" time="1.272">
+    <testcase classname="AutoFilterController test put_worksheet_date_filter test" name="should call PutWorksheetDateFilter successfully" time="1.271">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test put_worksheet_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:23" time="1.217">
+    <testcase classname="AutoFilterController test put_worksheet_filter test" name="should call PutWorksheetFilter successfully" time="1.215">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test put_worksheet_icon_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:24" time="0.97">
+    <testcase classname="AutoFilterController test put_worksheet_icon_filter test" name="should call PutWorksheetIconFilter successfully" time="0.968">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test put_worksheet_custom_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:25" time="0.915">
+    <testcase classname="AutoFilterController test put_worksheet_custom_filter test" name="should call PutWorksheetCustomFilter successfully" time="0.912">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test put_worksheet_dynamic_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:26" time="1.219">
+    <testcase classname="AutoFilterController test put_worksheet_dynamic_filter test" name="should call PutWorksheetDynamicFilter successfully" time="1.217">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test put_worksheet_filter_top10 test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:27" time="1.937">
+    <testcase classname="AutoFilterController test put_worksheet_filter_top10 test" name="should call PutWorksheetFilterTop10 successfully" time="1.935">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test put_worksheet_color_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:29" time="1.088">
+    <testcase classname="AutoFilterController test put_worksheet_color_filter test" name="should call PutWorksheetColorFilter successfully" time="1.086">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test post_worksheet_match_blanks test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:31" time="0.774">
+    <testcase classname="AutoFilterController test post_worksheet_match_blanks test" name="should call PostWorksheetMatchBlanks successfully" time="0.772">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test post_worksheet_match_non_blanks test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:31" time="1.67">
+    <testcase classname="AutoFilterController test post_worksheet_match_non_blanks test" name="should call PostWorksheetMatchNonBlanks successfully" time="1.668">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test post_worksheet_auto_filter_refresh test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:33" time="1.778">
+    <testcase classname="AutoFilterController test post_worksheet_auto_filter_refresh test" name="should call PostWorksheetAutoFilterRefresh successfully" time="1.776">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test delete_worksheet_date_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:35" time="1.051">
+    <testcase classname="AutoFilterController test delete_worksheet_date_filter test" name="should call DeleteWorksheetDateFilter successfully" time="1.05">
+    </testcase>
+  </testsuite>
+  <testsuite name="AutoFilterController test delete_worksheet_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:36" time="0.732">
+    <testcase classname="AutoFilterController test delete_worksheet_filter test" name="should call DeleteWorksheetFilter successfully" time="0.731">
+    </testcase>
+  </testsuite>
+  <testsuite name="BatchController test post_batch_convert test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:37" time="4.161">
+    <testcase classname="BatchController test post_batch_convert test" name="should call PostBatchConvert successfully" time="4.159">
+    </testcase>
+  </testsuite>
+  <testsuite name="BatchController test post_batch_protect test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:41" time="1.869">
+    <testcase classname="BatchController test post_batch_protect test" name="should call PostBatchProtect successfully" time="1.867">
+    </testcase>
+  </testsuite>
+  <testsuite name="BatchController test post_batch_lock test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:43" time="1.479">
+    <testcase classname="BatchController test post_batch_lock test" name="should call PostBatchLock successfully" time="1.478">
+    </testcase>
+  </testsuite>
+  <testsuite name="BatchController test post_batch_unlock test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:44" time="2.179">
+    <testcase classname="BatchController test post_batch_unlock test" name="should call PostBatchUnlock successfully" time="2.178">
+    </testcase>
+  </testsuite>
+  <testsuite name="BatchController test post_batch_split test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:46" time="5.705">
+    <testcase classname="BatchController test post_batch_split test" name="should call PostBatchSplit successfully" time="5.704">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_clear_contents test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:52" time="1.09">
+    <testcase classname="CellsController test post_clear_contents test" name="should call PostClearContents successfully" time="1.088">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_clear_formats test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:53" time="0.739">
+    <testcase classname="CellsController test post_clear_formats test" name="should call PostClearFormats successfully" time="0.737">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_update_worksheet_range_style test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:54" time="0.738">
+    <testcase classname="CellsController test post_update_worksheet_range_style test" name="should call PostUpdateWorksheetRangeStyle successfully" time="0.736">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_worksheet_merge test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:55" time="0.731">
+    <testcase classname="CellsController test post_worksheet_merge test" name="should call PostWorksheetMerge successfully" time="0.729">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_worksheet_unmerge test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:55" time="1.259">
+    <testcase classname="CellsController test post_worksheet_unmerge test" name="should call PostWorksheetUnmerge successfully" time="1.257">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test get_worksheet_cells test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:57" time="0.379">
+    <testcase classname="CellsController test get_worksheet_cells test" name="should call GetWorksheetCells successfully" time="0.378">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test get_worksheet_cell test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:57" time="0.675">
+    <testcase classname="CellsController test get_worksheet_cell test" name="should call GetWorksheetCell successfully" time="0.673">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test get_worksheet_cell_style test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:58" time="0.5">
+    <testcase classname="CellsController test get_worksheet_cell_style test" name="should call GetWorksheetCellStyle successfully" time="0.498">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_worksheet_cell_set_value test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:58" time="0.742">
+    <testcase classname="CellsController test post_worksheet_cell_set_value test" name="should call PostWorksheetCellSetValue successfully" time="0.74">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_update_worksheet_cell_style test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:14:59" time="1.275">
+    <testcase classname="CellsController test post_update_worksheet_cell_style test" name="should call PostUpdateWorksheetCellStyle successfully" time="1.273">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_set_cell_range_value test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:00" time="0.783">
+    <testcase classname="CellsController test post_set_cell_range_value test" name="should call PostSetCellRangeValue successfully" time="0.78">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_copy_cell_into_cell test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:01" time="0.725">
+    <testcase classname="CellsController test post_copy_cell_into_cell test" name="should call PostCopyCellIntoCell successfully" time="0.723">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test get_cell_html_string test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:02" time="0.611">
+    <testcase classname="CellsController test get_cell_html_string test" name="should call GetCellHtmlString successfully" time="0.609">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_set_cell_html_string test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:02" time="0.786">
+    <testcase classname="CellsController test post_set_cell_html_string test" name="should call PostSetCellHtmlString successfully" time="0.784">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_cell_calculate test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:03" time="0.757">
+    <testcase classname="CellsController test post_cell_calculate test" name="should call PostCellCalculate successfully" time="0.755">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_cell_characters test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:04" time="0.781">
+    <testcase classname="CellsController test post_cell_characters test" name="should call PostCellCharacters successfully" time="0.779">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test get_worksheet_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:05" time="0.523">
+    <testcase classname="CellsController test get_worksheet_columns test" name="should call GetWorksheetColumns successfully" time="0.521">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_set_worksheet_column_width test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:05" time="0.736">
+    <testcase classname="CellsController test post_set_worksheet_column_width test" name="should call PostSetWorksheetColumnWidth successfully" time="0.734">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test get_worksheet_column test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:06" time="0.365">
+    <testcase classname="CellsController test get_worksheet_column test" name="should call GetWorksheetColumn successfully" time="0.364">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test put_insert_worksheet_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:06" time="0.904">
+    <testcase classname="CellsController test put_insert_worksheet_columns test" name="should call PutInsertWorksheetColumns successfully" time="0.902">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test delete_worksheet_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:07" time="1.261">
+    <testcase classname="CellsController test delete_worksheet_columns test" name="should call DeleteWorksheetColumns successfully" time="1.26">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_hide_worksheet_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:08" time="1.354">
+    <testcase classname="CellsController test post_hide_worksheet_columns test" name="should call PostHideWorksheetColumns successfully" time="1.353">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_unhide_worksheet_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:10" time="0.793">
+    <testcase classname="CellsController test post_unhide_worksheet_columns test" name="should call PostUnhideWorksheetColumns successfully" time="0.791">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_group_worksheet_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:10" time="0.77">
+    <testcase classname="CellsController test post_group_worksheet_columns test" name="should call PostGroupWorksheetColumns successfully" time="0.768">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_ungroup_worksheet_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:11" time="0.764">
+    <testcase classname="CellsController test post_ungroup_worksheet_columns test" name="should call PostUngroupWorksheetColumns successfully" time="0.762">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_copy_worksheet_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:12" time="0.726">
+    <testcase classname="CellsController test post_copy_worksheet_columns test" name="should call PostCopyWorksheetColumns successfully" time="0.724">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_column_style test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:13" time="0.741">
+    <testcase classname="CellsController test post_column_style test" name="should call PostColumnStyle successfully" time="0.739">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test get_worksheet_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:13" time="0.396">
+    <testcase classname="CellsController test get_worksheet_rows test" name="should call GetWorksheetRows successfully" time="0.395">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test get_worksheet_row test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:14" time="1.323">
+    <testcase classname="CellsController test get_worksheet_row test" name="should call GetWorksheetRow successfully" time="1.321">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test delete_worksheet_row test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:15" time="0.749">
+    <testcase classname="CellsController test delete_worksheet_row test" name="should call DeleteWorksheetRow successfully" time="0.747">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test delete_worksheet_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:16" time="0.941">
+    <testcase classname="CellsController test delete_worksheet_rows test" name="should call DeleteWorksheetRows successfully" time="0.937">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test put_insert_worksheet_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:17" time="0.727">
+    <testcase classname="CellsController test put_insert_worksheet_rows test" name="should call PutInsertWorksheetRows successfully" time="0.725">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test put_insert_worksheet_row test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:18" time="0.939">
+    <testcase classname="CellsController test put_insert_worksheet_row test" name="should call PutInsertWorksheetRow successfully" time="0.936">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_update_worksheet_row test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:19" time="0.837">
+    <testcase classname="CellsController test post_update_worksheet_row test" name="should call PostUpdateWorksheetRow successfully" time="0.835">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_hide_worksheet_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:19" time="0.815">
+    <testcase classname="CellsController test post_hide_worksheet_rows test" name="should call PostHideWorksheetRows successfully" time="0.812">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_unhide_worksheet_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:20" time="0.836">
+    <testcase classname="CellsController test post_unhide_worksheet_rows test" name="should call PostUnhideWorksheetRows successfully" time="0.834">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_group_worksheet_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:21" time="0.75">
+    <testcase classname="CellsController test post_group_worksheet_rows test" name="should call PostGroupWorksheetRows successfully" time="0.748">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_ungroup_worksheet_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:22" time="0.75">
+    <testcase classname="CellsController test post_ungroup_worksheet_rows test" name="should call PostUngroupWorksheetRows successfully" time="0.748">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_copy_worksheet_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:23" time="0.759">
+    <testcase classname="CellsController test post_copy_worksheet_rows test" name="should call PostCopyWorksheetRows successfully" time="0.757">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsController test post_row_style test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:23" time="0.851">
+    <testcase classname="CellsController test post_row_style test" name="should call PostRowStyle successfully" time="0.848">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsStatusController test get_cells_cloud_services_health_check test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:24" time="2.094">
+    <testcase classname="CellsStatusController test get_cells_cloud_services_health_check test" name="should call GetCellsCloudServicesHealthCheck successfully" time="2.093">
+    </testcase>
+  </testsuite>
+  <testsuite name="CellsStatusController test get_cells_cloud_service_status test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:26" time="0.258">
+    <testcase classname="CellsStatusController test get_cells_cloud_service_status test" name="should call GetCellsCloudServiceStatus successfully" time="0.256">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartAreaController test get_chart_area test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:27" time="0.715">
+    <testcase classname="ChartAreaController test get_chart_area test" name="should call GetChartArea successfully" time="0.713">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartAreaController test get_chart_area_fill_format test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:27" time="0.394">
+    <testcase classname="ChartAreaController test get_chart_area_fill_format test" name="should call GetChartAreaFillFormat successfully" time="0.393">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartAreaController test get_chart_area_border test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:28" time="1.41">
+    <testcase classname="ChartAreaController test get_chart_area_border test" name="should call GetChartAreaBorder successfully" time="1.407">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test get_worksheet_charts test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:29" time="0.703">
+    <testcase classname="ChartsController test get_worksheet_charts test" name="should call GetWorksheetCharts successfully" time="0.701">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test get_worksheet_chart test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:30" time="0.813">
+    <testcase classname="ChartsController test get_worksheet_chart test" name="should call GetWorksheetChart successfully" time="0.811">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test put_worksheet_chart test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:31" time="0.754">
+    <testcase classname="ChartsController test put_worksheet_chart test" name="should call PutWorksheetChart successfully" time="0.754">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test delete_worksheet_chart test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:31" time="0.886">
+    <testcase classname="ChartsController test delete_worksheet_chart test" name="should call DeleteWorksheetChart successfully" time="0.885">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test post_worksheet_chart test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:32" time="0.737">
+    <testcase classname="ChartsController test post_worksheet_chart test" name="should call PostWorksheetChart successfully" time="0.735">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test get_worksheet_chart_legend test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:33" time="0.538">
+    <testcase classname="ChartsController test get_worksheet_chart_legend test" name="should call GetWorksheetChartLegend successfully" time="0.537">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test post_worksheet_chart_legend test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:34" time="0.755">
+    <testcase classname="ChartsController test post_worksheet_chart_legend test" name="should call PostWorksheetChartLegend successfully" time="0.754">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test put_worksheet_chart_legend test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:34" time="0.753">
+    <testcase classname="ChartsController test put_worksheet_chart_legend test" name="should call PutWorksheetChartLegend successfully" time="0.751">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test delete_worksheet_chart_legend test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:35" time="1.245">
+    <testcase classname="ChartsController test delete_worksheet_chart_legend test" name="should call DeleteWorksheetChartLegend successfully" time="1.243">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test delete_worksheet_charts test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:36" time="0.719">
+    <testcase classname="ChartsController test delete_worksheet_charts test" name="should call DeleteWorksheetCharts successfully" time="0.718">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test get_worksheet_chart_title test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:37" time="0.495">
+    <testcase classname="ChartsController test get_worksheet_chart_title test" name="should call GetWorksheetChartTitle successfully" time="0.494">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test post_worksheet_chart_title test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:37" time="0.761">
+    <testcase classname="ChartsController test post_worksheet_chart_title test" name="should call PostWorksheetChartTitle successfully" time="0.76">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test put_worksheet_chart_title test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:38" time="0.736">
+    <testcase classname="ChartsController test put_worksheet_chart_title test" name="should call PutWorksheetChartTitle successfully" time="0.733">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChartsController test delete_worksheet_chart_title test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:39" time="0.751">
+    <testcase classname="ChartsController test delete_worksheet_chart_title test" name="should call DeleteWorksheetChartTitle successfully" time="0.749">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConditionalFormattingsController test get_worksheet_conditional_formattings test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:40" time="2.317">
+    <testcase classname="ConditionalFormattingsController test get_worksheet_conditional_formattings test" name="should call GetWorksheetConditionalFormattings successfully" time="2.316">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConditionalFormattingsController test get_worksheet_conditional_formatting test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:42" time="0.381">
+    <testcase classname="ConditionalFormattingsController test get_worksheet_conditional_formatting test" name="should call GetWorksheetConditionalFormatting successfully" time="0.38">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConditionalFormattingsController test put_worksheet_conditional_formatting test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:42" time="0.874">
+    <testcase classname="ConditionalFormattingsController test put_worksheet_conditional_formatting test" name="should call PutWorksheetConditionalFormatting successfully" time="0.873">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConditionalFormattingsController test put_worksheet_format_condition test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:43" time="0.688">
+    <testcase classname="ConditionalFormattingsController test put_worksheet_format_condition test" name="should call PutWorksheetFormatCondition successfully" time="0.683">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConditionalFormattingsController test put_worksheet_format_condition_area test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:44" time="0.728">
+    <testcase classname="ConditionalFormattingsController test put_worksheet_format_condition_area test" name="should call PutWorksheetFormatConditionArea successfully" time="0.727">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConditionalFormattingsController test put_worksheet_format_condition_condition test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:45" time="0.735">
+    <testcase classname="ConditionalFormattingsController test put_worksheet_format_condition_condition test" name="should call PutWorksheetFormatConditionCondition successfully" time="0.734">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConditionalFormattingsController test delete_worksheet_conditional_formattings test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:45" time="1.178">
+    <testcase classname="ConditionalFormattingsController test delete_worksheet_conditional_formattings test" name="should call DeleteWorksheetConditionalFormattings successfully" time="1.177">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConditionalFormattingsController test delete_worksheet_conditional_formatting test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:15:47" time="0.469">
+    <testcase classname="ConditionalFormattingsController test delete_worksheet_conditional_formatting test" name="should call DeleteWorksheetConditionalFormatting successfully" time="0.463">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ConditionalFormattingsController test delete_worksheet_conditional_formatting_area test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:47" time="0.69">
+    <testcase classname="ConditionalFormattingsController test delete_worksheet_conditional_formatting_area test" name="should call DeleteWorksheetConditionalFormattingArea successfully" time="0.689">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_csv__out_result_post_excel_save_ascsv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:48" time="2.108">
+    <testcase classname="Conversion30 test workbook_save_as_csv__out_result_post_excel_save_ascsv test" name="should call PostWorkbookSaveAs successfully" time="2.107">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_html__out_result_post_excel_save_ashtml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:50" time="0.773">
+    <testcase classname="Conversion30 test workbook_save_as_html__out_result_post_excel_save_ashtml test" name="should call PostWorkbookSaveAs successfully" time="0.772">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_mhtml__out_result_post_excel_save_asmhtml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:51" time="0.752">
+    <testcase classname="Conversion30 test workbook_save_as_mhtml__out_result_post_excel_save_asmhtml test" name="should call PostWorkbookSaveAs successfully" time="0.751">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_ods__out_result_post_excel_save_asods test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:51" time="0.692">
+    <testcase classname="Conversion30 test workbook_save_as_ods__out_result_post_excel_save_asods test" name="should call PostWorkbookSaveAs successfully" time="0.691">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_pdf__out_result_post_excel_save_aspdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:52" time="1.012">
+    <testcase classname="Conversion30 test workbook_save_as_pdf__out_result_post_excel_save_aspdf test" name="should call PostWorkbookSaveAs successfully" time="1.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_xml__out_result_post_excel_save_asxml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:53" time="1.341">
+    <testcase classname="Conversion30 test workbook_save_as_xml__out_result_post_excel_save_asxml test" name="should call PostWorkbookSaveAs successfully" time="1.339">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_txt__out_result_post_excel_save_astxt test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:55" time="1.25">
+    <testcase classname="Conversion30 test workbook_save_as_txt__out_result_post_excel_save_astxt test" name="should call PostWorkbookSaveAs successfully" time="1.248">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_tif__out_result_post_excel_save_astif test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:56" time="1.853">
+    <testcase classname="Conversion30 test workbook_save_as_tif__out_result_post_excel_save_astif test" name="should call PostWorkbookSaveAs successfully" time="1.851">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_xlsb__out_result_post_excel_save_asxlsb test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:58" time="1.038">
+    <testcase classname="Conversion30 test workbook_save_as_xlsb__out_result_post_excel_save_asxlsb test" name="should call PostWorkbookSaveAs successfully" time="1.034">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_xps__out_result_post_excel_save_asxps test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:15:59" time="1.005">
+    <testcase classname="Conversion30 test workbook_save_as_xps__out_result_post_excel_save_asxps test" name="should call PostWorkbookSaveAs successfully" time="1.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_png__out_result_post_excel_save_aspng test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:00" time="2.582">
+    <testcase classname="Conversion30 test workbook_save_as_png__out_result_post_excel_save_aspng test" name="should call PostWorkbookSaveAs successfully" time="2.58">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_md__out_result_post_excel_save_asmd test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:02" time="0.843">
+    <testcase classname="Conversion30 test workbook_save_as_md__out_result_post_excel_save_asmd test" name="should call PostWorkbookSaveAs successfully" time="0.842">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_svg__out_result_post_excel_save_assvg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:03" time="1.205">
+    <testcase classname="Conversion30 test workbook_save_as_svg__out_result_post_excel_save_assvg test" name="should call PostWorkbookSaveAs successfully" time="1.203">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_docx__out_result_post_excel_save_asdocx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:04" time="3.015">
+    <testcase classname="Conversion30 test workbook_save_as_docx__out_result_post_excel_save_asdocx test" name="should call PostWorkbookSaveAs successfully" time="3.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_pptx__out_result_post_excel_save_aspptx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:07" time="1.553">
+    <testcase classname="Conversion30 test workbook_save_as_pptx__out_result_post_excel_save_aspptx test" name="should call PostWorkbookSaveAs successfully" time="1.551">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_json__out_result_post_excel_save_asjson test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:09" time="0.687">
+    <testcase classname="Conversion30 test workbook_save_as_json__out_result_post_excel_save_asjson test" name="should call PostWorkbookSaveAs successfully" time="0.685">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test workbook_save_as_sql__out_result_post_excel_save_assql test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:10" time="0.756">
+    <testcase classname="Conversion30 test workbook_save_as_sql__out_result_post_excel_save_assql test" name="should call PostWorkbookSaveAs successfully" time="0.755">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_csv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:10" time="0.564">
+    <testcase classname="Conversion30 test get_workbook_format_csv test" name="should call GetWorkbook successfully" time="0.563">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_html test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:11" time="31.568">
+    <testcase classname="Conversion30 test get_workbook_format_html test" name="should call GetWorkbook successfully" time="31.567">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_mhtml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:16:42" time="22.276">
+    <testcase classname="Conversion30 test get_workbook_format_mhtml test" name="should call GetWorkbook successfully" time="22.273">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_ods test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:17:05" time="4.641">
+    <testcase classname="Conversion30 test get_workbook_format_ods test" name="should call GetWorkbook successfully" time="4.638">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:17:09" time="5.842">
+    <testcase classname="Conversion30 test get_workbook_format_pdf test" name="should call GetWorkbook successfully" time="5.841">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_xml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:17:15" time="4.196">
+    <testcase classname="Conversion30 test get_workbook_format_xml test" name="should call GetWorkbook successfully" time="4.194">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_txt test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:17:19" time="0.537">
+    <testcase classname="Conversion30 test get_workbook_format_txt test" name="should call GetWorkbook successfully" time="0.536">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_tif test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:17:20" time="37.228">
+    <testcase classname="Conversion30 test get_workbook_format_tif test" name="should call GetWorkbook successfully" time="37.228">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_xps test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:17:57" time="23.777">
+    <testcase classname="Conversion30 test get_workbook_format_xps test" name="should call GetWorkbook successfully" time="23.777">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_png test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:18:21" time="33.154">
+    <testcase classname="Conversion30 test get_workbook_format_png test" name="should call GetWorkbook successfully" time="33.153">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_md test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:18:54" time="14.999">
+    <testcase classname="Conversion30 test get_workbook_format_md test" name="should call GetWorkbook successfully" time="14.997">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:19:09" time="1.525">
+    <testcase classname="Conversion30 test get_workbook_format_svg test" name="should call GetWorkbook successfully" time="1.523">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_docx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:19:11" time="11.241">
+    <testcase classname="Conversion30 test get_workbook_format_docx test" name="should call GetWorkbook successfully" time="11.24">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_pptx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:19:22" time="13.828">
+    <testcase classname="Conversion30 test get_workbook_format_pptx test" name="should call GetWorkbook successfully" time="13.827">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_json test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:19:36" time="1.398">
+    <testcase classname="Conversion30 test get_workbook_format_json test" name="should call GetWorkbook successfully" time="1.397">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test get_workbook_format_sql test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:19:37" time="8.253">
+    <testcase classname="Conversion30 test get_workbook_format_sql test" name="should call GetWorkbook successfully" time="8.25">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_csv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:19:45" time="1.026">
+    <testcase classname="Conversion30 test convert_workbook_csv test" name="should call PutConvertWorkbook successfully" time="1.024">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_xls test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:19:46" time="15.277">
+    <testcase classname="Conversion30 test convert_workbook_xls test" name="should call PutConvertWorkbook successfully" time="15.276">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_html test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:20:02" time="15.362">
+    <testcase classname="Conversion30 test convert_workbook_html test" name="should call PutConvertWorkbook successfully" time="15.361">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_mhtml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:20:17" time="19.103">
+    <testcase classname="Conversion30 test convert_workbook_mhtml test" name="should call PutConvertWorkbook successfully" time="19.102">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_ods test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:20:36" time="5.579">
+    <testcase classname="Conversion30 test convert_workbook_ods test" name="should call PutConvertWorkbook successfully" time="5.578">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:20:42" time="10.429">
+    <testcase classname="Conversion30 test convert_workbook_pdf test" name="should call PutConvertWorkbook successfully" time="10.428">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_xml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:20:52" time="1.183">
+    <testcase classname="Conversion30 test convert_workbook_xml test" name="should call PutConvertWorkbook successfully" time="1.183">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_txt test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:20:53" time="0.631">
+    <testcase classname="Conversion30 test convert_workbook_txt test" name="should call PutConvertWorkbook successfully" time="0.628">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_tif test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:20:54" time="37.766">
+    <testcase classname="Conversion30 test convert_workbook_tif test" name="should call PutConvertWorkbook successfully" time="37.765">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_xlsb test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:21:32" time="10.895">
+    <testcase classname="Conversion30 test convert_workbook_xlsb test" name="should call PutConvertWorkbook successfully" time="10.895">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_xps test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:21:43" time="12.071">
+    <testcase classname="Conversion30 test convert_workbook_xps test" name="should call PutConvertWorkbook successfully" time="12.071">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_png test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:21:55" time="26.757">
+    <testcase classname="Conversion30 test convert_workbook_png test" name="should call PutConvertWorkbook successfully" time="26.755">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_md test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:22:21" time="10.829">
+    <testcase classname="Conversion30 test convert_workbook_md test" name="should call PutConvertWorkbook successfully" time="10.828">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:22:32" time="0.545">
+    <testcase classname="Conversion30 test convert_workbook_svg test" name="should call PutConvertWorkbook successfully" time="0.543">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_docx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:22:33" time="10.841">
+    <testcase classname="Conversion30 test convert_workbook_docx test" name="should call PutConvertWorkbook successfully" time="10.84">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_pptx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:22:44" time="16.373">
+    <testcase classname="Conversion30 test convert_workbook_pptx test" name="should call PutConvertWorkbook successfully" time="16.372">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_json test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:00" time="0.58">
+    <testcase classname="Conversion30 test convert_workbook_json test" name="should call PutConvertWorkbook successfully" time="0.578">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_sql test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:01" time="8.243">
+    <testcase classname="Conversion30 test convert_workbook_sql test" name="should call PutConvertWorkbook successfully" time="8.241">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_csv__out_result_convert_workbookcsv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:09" time="0.791">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_csv__out_result_convert_workbookcsv test" name="should call PutConvertWorkbook successfully" time="0.789">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_xls__out_result_convert_workbookxls test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:10" time="0.93">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_xls__out_result_convert_workbookxls test" name="should call PutConvertWorkbook successfully" time="0.929">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_html__out_result_convert_workbookhtml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:11" time="1.573">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_html__out_result_convert_workbookhtml test" name="should call PutConvertWorkbook successfully" time="1.572">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_mhtml__out_result_convert_workbookmhtml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:12" time="0.826">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_mhtml__out_result_convert_workbookmhtml test" name="should call PutConvertWorkbook successfully" time="0.825">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_ods__out_result_convert_workbookods test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:13" time="0.83">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_ods__out_result_convert_workbookods test" name="should call PutConvertWorkbook successfully" time="0.829">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_pdf__out_result_convert_workbookpdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:14" time="1.07">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_pdf__out_result_convert_workbookpdf test" name="should call PutConvertWorkbook successfully" time="1.069">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_xml__out_result_convert_workbookxml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:15" time="0.722">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_xml__out_result_convert_workbookxml test" name="should call PutConvertWorkbook successfully" time="0.72">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_txt__out_result_convert_workbooktxt test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:16" time="0.65">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_txt__out_result_convert_workbooktxt test" name="should call PutConvertWorkbook successfully" time="0.649">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_tif__out_result_convert_workbooktif test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:16" time="2.283">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_tif__out_result_convert_workbooktif test" name="should call PutConvertWorkbook successfully" time="2.281">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_xlsb__out_result_convert_workbookxlsb test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:19" time="2.113">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_xlsb__out_result_convert_workbookxlsb test" name="should call PutConvertWorkbook successfully" time="2.112">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_xltm__out_result_convert_workbookxltm test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:21" time="0.719">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_xltm__out_result_convert_workbookxltm test" name="should call PutConvertWorkbook successfully" time="0.717">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_xps__out_result_convert_workbookxps test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:21" time="0.915">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_xps__out_result_convert_workbookxps test" name="should call PutConvertWorkbook successfully" time="0.915">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_png__out_result_convert_workbookpng test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:22" time="2.998">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_png__out_result_convert_workbookpng test" name="should call PutConvertWorkbook successfully" time="2.998">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_md__out_result_convert_workbookmd test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:25" time="1.058">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_md__out_result_convert_workbookmd test" name="should call PutConvertWorkbook successfully" time="1.058">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_svg__out_result_convert_workbooksvg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:26" time="0.658">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_svg__out_result_convert_workbooksvg test" name="should call PutConvertWorkbook successfully" time="0.657">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_docx__out_result_convert_workbookdocx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:27" time="1.228">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_docx__out_result_convert_workbookdocx test" name="should call PutConvertWorkbook successfully" time="1.226">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_pptx__out_result_convert_workbookpptx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:28" time="2.526">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_pptx__out_result_convert_workbookpptx test" name="should call PutConvertWorkbook successfully" time="2.524">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_json__out_result_convert_workbookjson test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:31" time="0.65">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_json__out_result_convert_workbookjson test" name="should call PutConvertWorkbook successfully" time="0.648">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion30 test convert_workbook_save_cloud_sql__out_result_convert_workbooksql test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:31" time="0.657">
+    <testcase classname="Conversion30 test convert_workbook_save_cloud_sql__out_result_convert_workbooksql test" name="should call PutConvertWorkbook successfully" time="0.655">
+    </testcase>
+  </testsuite>
+  <testsuite name="DataProcessingController test post_workbook_data_cleansing test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:32" time="1.594">
+    <testcase classname="DataProcessingController test post_workbook_data_cleansing test" name="should call PostWorkbookDataCleansing successfully" time="1.593">
+    </testcase>
+  </testsuite>
+  <testsuite name="DataProcessingController test post_workbook_data_deduplication test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:34" time="0.678">
+    <testcase classname="DataProcessingController test post_workbook_data_deduplication test" name="should call PostWorkbookDataDeduplication successfully" time="0.677">
+    </testcase>
+  </testsuite>
+  <testsuite name="DataProcessingController test post_workbook_data_fill test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:34" time="0.674">
+    <testcase classname="DataProcessingController test post_workbook_data_fill test" name="should call PostWorkbookDataFill successfully" time="0.672">
+    </testcase>
+  </testsuite>
+  <testsuite name="DataProcessingController test post_data_transformation test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:23:35" time="0.426">
+    <testcase classname="DataProcessingController test post_data_transformation test" name="should call PostDataTransformation successfully" time="0.422">
+      <failure message="the object {
+  &quot;code&quot;: 500
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="HypelinksController test get_worksheet_hyperlinks test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:35" time="3.632">
+    <testcase classname="HypelinksController test get_worksheet_hyperlinks test" name="should call GetWorksheetHyperlinks successfully" time="3.63">
+    </testcase>
+  </testsuite>
+  <testsuite name="HypelinksController test get_worksheet_hyperlink test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:39" time="0.518">
+    <testcase classname="HypelinksController test get_worksheet_hyperlink test" name="should call GetWorksheetHyperlink successfully" time="0.516">
+    </testcase>
+  </testsuite>
+  <testsuite name="HypelinksController test delete_worksheet_hyperlink test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:40" time="1.659">
+    <testcase classname="HypelinksController test delete_worksheet_hyperlink test" name="should call DeleteWorksheetHyperlink successfully" time="1.658">
+    </testcase>
+  </testsuite>
+  <testsuite name="HypelinksController test post_worksheet_hyperlink test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:41" time="3.686">
+    <testcase classname="HypelinksController test post_worksheet_hyperlink test" name="should call PostWorksheetHyperlink successfully" time="3.685">
+    </testcase>
+  </testsuite>
+  <testsuite name="HypelinksController test put_worksheet_hyperlink test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:45" time="0.791">
+    <testcase classname="HypelinksController test put_worksheet_hyperlink test" name="should call PutWorksheetHyperlink successfully" time="0.79">
+    </testcase>
+  </testsuite>
+  <testsuite name="HypelinksController test delete_worksheet_hyperlinks test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:46" time="1.122">
+    <testcase classname="HypelinksController test delete_worksheet_hyperlinks test" name="should call DeleteWorksheetHyperlinks successfully" time="1.12">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_csv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:47" time="2.331">
+    <testcase classname="LightCells test post_split_csv test" name="should call PostSplit successfully" time="2.33">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_html test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:23:49" time="45.59">
+    <testcase classname="LightCells test post_split_html test" name="should call PostSplit successfully" time="45.586">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_ods test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:24:35" time="15.816">
+    <testcase classname="LightCells test post_split_ods test" name="should call PostSplit successfully" time="15.814">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:24:51" time="18.133">
+    <testcase classname="LightCells test post_split_pdf test" name="should call PostSplit successfully" time="18.131">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_xps test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:25:09" time="34.822">
+    <testcase classname="LightCells test post_split_xps test" name="should call PostSplit successfully" time="34.82">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_md test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:25:44" time="7.876">
+    <testcase classname="LightCells test post_split_md test" name="should call PostSplit successfully" time="7.875">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:25:51" time="21.282">
+    <testcase classname="LightCells test post_split_svg test" name="should call PostSplit successfully" time="21.281">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_docx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:26:13" time="25.232">
+    <testcase classname="LightCells test post_split_docx test" name="should call PostSplit successfully" time="25.229">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_pptx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:26:38" time="71.272">
+    <testcase classname="LightCells test post_split_pptx test" name="should call PostSplit successfully" time="71.27">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_split_json test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:27:49" time="1.267">
+    <testcase classname="LightCells test post_split_json test" name="should call PostSplit successfully" time="1.266">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_assemble_csv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:27:51" time="0.571">
+    <testcase classname="LightCells test post_assemble_csv test" name="should call PostAssemble successfully" time="0.569">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_assemble_html test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:27:51" time="1.486">
+    <testcase classname="LightCells test post_assemble_html test" name="should call PostAssemble successfully" time="1.486">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_assemble_ods test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:27:53" time="0.79">
+    <testcase classname="LightCells test post_assemble_ods test" name="should call PostAssemble successfully" time="0.789">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_assemble_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:27:53" time="2.015">
+    <testcase classname="LightCells test post_assemble_pdf test" name="should call PostAssemble successfully" time="2.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_assemble_md test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:27:55" time="0.529">
+    <testcase classname="LightCells test post_assemble_md test" name="should call PostAssemble successfully" time="0.527">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_assemble_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:27:56" time="0.783">
+    <testcase classname="LightCells test post_assemble_svg test" name="should call PostAssemble successfully" time="0.781">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_assemble_docx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:27:57" time="0.815">
+    <testcase classname="LightCells test post_assemble_docx test" name="should call PostAssemble successfully" time="0.812">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_assemble_pptx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:27:58" time="5.775">
+    <testcase classname="LightCells test post_assemble_pptx test" name="should call PostAssemble successfully" time="5.771">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_assemble_json test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:28:03" time="1.029">
+    <testcase classname="LightCells test post_assemble_json test" name="should call PostAssemble successfully" time="1.027">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_csv_workbook test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:28:04" time="0.564">
+    <testcase classname="LightCells test post_export_csv_workbook test" name="should call PostExport successfully" time="0.562">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_html_workbook test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:28:05" time="34.166">
+    <testcase classname="LightCells test post_export_html_workbook test" name="should call PostExport successfully" time="34.164">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_pdf_workbook test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:28:39" time="14.632">
+    <testcase classname="LightCells test post_export_pdf_workbook test" name="should call PostExport successfully" time="14.631">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_pptx_workbook test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:28:54" time="19.164">
+    <testcase classname="LightCells test post_export_pptx_workbook test" name="should call PostExport successfully" time="19.162">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_json_workbook test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:29:13" time="1.094">
+    <testcase classname="LightCells test post_export_json_workbook test" name="should call PostExport successfully" time="1.092">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_html_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:29:14" time="53.136">
+    <testcase classname="LightCells test post_export_html_worksheet test" name="should call PostExport successfully" time="53.135">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_docx_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:07" time="21.035">
+    <testcase classname="LightCells test post_export_docx_worksheet test" name="should call PostExport successfully" time="21.033">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_json_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:28" time="3.08">
+    <testcase classname="LightCells test post_export_json_worksheet test" name="should call PostExport successfully" time="3.078">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_pdf_chart test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:31" time="10.293">
+    <testcase classname="LightCells test post_export_pdf_chart test" name="should call PostExport successfully" time="10.291">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_png_chart test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:42" time="2.145">
+    <testcase classname="LightCells test post_export_png_chart test" name="should call PostExport successfully" time="2.144">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_png_picture test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:44" time="3.762">
+    <testcase classname="LightCells test post_export_png_picture test" name="should call PostExport successfully" time="3.761">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_csv_listobject test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:47" time="0.774">
+    <testcase classname="LightCells test post_export_csv_listobject test" name="should call PostExport successfully" time="0.772">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_ods_listobject test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:48" time="1.569">
+    <testcase classname="LightCells test post_export_ods_listobject test" name="should call PostExport successfully" time="1.568">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_pdf_listobject test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:50" time="3.225">
+    <testcase classname="LightCells test post_export_pdf_listobject test" name="should call PostExport successfully" time="3.222">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_md_listobject test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:53" time="0.67">
+    <testcase classname="LightCells test post_export_md_listobject test" name="should call PostExport successfully" time="0.669">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_docx_listobject test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:54" time="4.862">
+    <testcase classname="LightCells test post_export_docx_listobject test" name="should call PostExport successfully" time="4.861">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_pptx_listobject test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:30:59" time="6.469">
+    <testcase classname="LightCells test post_export_pptx_listobject test" name="should call PostExport successfully" time="6.466">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_export_json_listobject test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:05" time="0.574">
+    <testcase classname="LightCells test post_export_json_listobject test" name="should call PostExport successfully" time="0.572">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_compress_50 test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:06" time="3.351">
+    <testcase classname="LightCells test post_compress_50 test" name="should call PostCompress successfully" time="3.35">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_compress_90 test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:09" time="1.512">
+    <testcase classname="LightCells test post_compress_90 test" name="should call PostCompress successfully" time="1.51">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_merge_html_true test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:10" time="0.78">
+    <testcase classname="LightCells test post_merge_html_true test" name="should call PostMerge successfully" time="0.778">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_merge_pdf_true test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:11" time="1.897">
+    <testcase classname="LightCells test post_merge_pdf_true test" name="should call PostMerge successfully" time="1.896">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_merge_xlsx_true test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:13" time="0.792">
+    <testcase classname="LightCells test post_merge_xlsx_true test" name="should call PostMerge successfully" time="0.791">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_merge_json_false test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:14" time="0.521">
+    <testcase classname="LightCells test post_merge_json_false test" name="should call PostMerge successfully" time="0.519">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_unlock test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:14" time="1.52">
+    <testcase classname="LightCells test post_unlock test" name="should call PostUnlock successfully" time="1.519">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_lock test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:16" time="3.366">
+    <testcase classname="LightCells test post_lock test" name="should call PostLock successfully" time="3.365">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_protect test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:19" time="1.085">
+    <testcase classname="LightCells test post_protect test" name="should call PostProtect successfully" time="1.085">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_protect__protect_workbook_request test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:20" time="0.942">
+    <testcase classname="LightCells test post_protect__protect_workbook_request test" name="should call PostProtect successfully" time="0.939">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_search test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:21" time="0.568">
+    <testcase classname="LightCells test post_search test" name="should call PostSearch successfully" time="0.566">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_replace test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:22" time="2.306">
+    <testcase classname="LightCells test post_replace test" name="should call PostReplace successfully" time="2.304">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_replace_only_sheetname test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:24" time="2.007">
+    <testcase classname="LightCells test post_replace_only_sheetname test" name="should call PostReplace successfully" time="2.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_watermark test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:26" time="1.087">
+    <testcase classname="LightCells test post_watermark test" name="should call PostWatermark successfully" time="1.083">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects_chart test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:27" time="15.92">
+    <testcase classname="LightCells test post_clear_objects_chart test" name="should call PostClearObjects successfully" time="15.919">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects_comment test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:31:43" time="21.549">
+    <testcase classname="LightCells test post_clear_objects_comment test" name="should call PostClearObjects successfully" time="21.549">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects_picture test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:32:05" time="19.401">
+    <testcase classname="LightCells test post_clear_objects_picture test" name="should call PostClearObjects successfully" time="19.401">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects_shape test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:32:24" time="5.299">
+    <testcase classname="LightCells test post_clear_objects_shape test" name="should call PostClearObjects successfully" time="5.298">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects_listobject test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:32:30" time="19.962">
+    <testcase classname="LightCells test post_clear_objects_listobject test" name="should call PostClearObjects successfully" time="19.961">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects_hyperlink test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:32:49" time="20.964">
+    <testcase classname="LightCells test post_clear_objects_hyperlink test" name="should call PostClearObjects successfully" time="20.962">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects_oleobject test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:33:10" time="23.79">
+    <testcase classname="LightCells test post_clear_objects_oleobject test" name="should call PostClearObjects successfully" time="23.79">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects_pivottable test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:33:34" time="13.774">
+    <testcase classname="LightCells test post_clear_objects_pivottable test" name="should call PostClearObjects successfully" time="13.771">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects_validation test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:33:48" time="14.944">
+    <testcase classname="LightCells test post_clear_objects_validation test" name="should call PostClearObjects successfully" time="14.942">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_clear_objects__background test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:34:03" time="14.268">
+    <testcase classname="LightCells test post_clear_objects__background test" name="should call PostClearObjects successfully" time="14.266">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_repair_xlsx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:34:17" time="15.432">
+    <testcase classname="LightCells test post_repair_xlsx test" name="should call PostRepair successfully" time="15.431">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_repair_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:34:33" time="13.949">
+    <testcase classname="LightCells test post_repair_pdf test" name="should call PostRepair successfully" time="13.948">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_reverse_rows_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:34:47" time="14.242">
+    <testcase classname="LightCells test post_reverse_rows_pdf test" name="should call PostReverse successfully" time="14.238">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_reverse_cols_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:35:01" time="9.287">
+    <testcase classname="LightCells test post_reverse_cols_pdf test" name="should call PostReverse successfully" time="9.285">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_reverse_both_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:35:10" time="18.319">
+    <testcase classname="LightCells test post_reverse_both_pdf test" name="should call PostReverse successfully" time="18.318">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_reverse_rows_csv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:35:28" time="0.56">
+    <testcase classname="LightCells test post_reverse_rows_csv test" name="should call PostReverse successfully" time="0.56">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_reverse_cols_png test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:35:29" time="38.579">
+    <testcase classname="LightCells test post_reverse_cols_png test" name="should call PostReverse successfully" time="38.578">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_reverse_both_xlsx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:08" time="14.286">
+    <testcase classname="LightCells test post_reverse_both_xlsx test" name="should call PostReverse successfully" time="14.284">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test get_metadata test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:22" time="2.54">
+    <testcase classname="LightCells test get_metadata test" name="should call GetMetadata successfully" time="2.539">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test delete_metadata test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:24" time="18.773">
+    <testcase classname="LightCells test delete_metadata test" name="should call DeleteMetadata successfully" time="18.771">
+    </testcase>
+  </testsuite>
+  <testsuite name="LightCells test post_metadata test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:43" time="2.153">
+    <testcase classname="LightCells test post_metadata test" name="should call PostMetadata successfully" time="2.151">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test get_worksheet_list_objects test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:45" time="1.592">
+    <testcase classname="ListObjectsController test get_worksheet_list_objects test" name="should call GetWorksheetListObjects successfully" time="1.589">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test get_worksheet_list_object test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:47" time="2.016">
+    <testcase classname="ListObjectsController test get_worksheet_list_object test" name="should call GetWorksheetListObject successfully" time="2.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test put_worksheet_list_object test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:49" time="2.041">
+    <testcase classname="ListObjectsController test put_worksheet_list_object test" name="should call PutWorksheetListObject successfully" time="2.039">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test delete_worksheet_list_objects test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:51" time="1.266">
+    <testcase classname="ListObjectsController test delete_worksheet_list_objects test" name="should call DeleteWorksheetListObjects successfully" time="1.265">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test delete_worksheet_list_object test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:36:52" time="1.127">
+    <testcase classname="ListObjectsController test delete_worksheet_list_object test" name="should call DeleteWorksheetListObject successfully" time="1.126">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test post_worksheet_list_object test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:53" time="0.812">
+    <testcase classname="ListObjectsController test post_worksheet_list_object test" name="should call PostWorksheetListObject successfully" time="0.811">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test post_worksheet_list_object_convert_to_range test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:54" time="0.825">
+    <testcase classname="ListObjectsController test post_worksheet_list_object_convert_to_range test" name="should call PostWorksheetListObjectConvertToRange successfully" time="0.823">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test post_worksheet_list_object_summarize_with_pivot_table test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:55" time="1.049">
+    <testcase classname="ListObjectsController test post_worksheet_list_object_summarize_with_pivot_table test" name="should call PostWorksheetListObjectSummarizeWithPivotTable successfully" time="1.048">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test post_worksheet_list_object_sort_table test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:56" time="0.741">
+    <testcase classname="ListObjectsController test post_worksheet_list_object_sort_table test" name="should call PostWorksheetListObjectSortTable successfully" time="0.74">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test post_worksheet_list_column test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:57" time="0.975">
+    <testcase classname="ListObjectsController test post_worksheet_list_column test" name="should call PostWorksheetListColumn successfully" time="0.973">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test post_worksheet_list_columns_total test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:58" time="0.784">
+    <testcase classname="ListObjectsController test post_worksheet_list_columns_total test" name="should call PostWorksheetListColumnsTotal successfully" time="0.783">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test post_worksheet_list_object_remove_duplicates test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:59" time="0.656">
+    <testcase classname="ListObjectsController test post_worksheet_list_object_remove_duplicates test" name="should call PostWorksheetListObjectRemoveDuplicates successfully" time="0.656">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListObjectsController test post_worksheet_list_object_insert_slicer test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:36:59" time="0.664">
+    <testcase classname="ListObjectsController test post_worksheet_list_object_insert_slicer test" name="should call PostWorksheetListObjectInsertSlicer successfully" time="0.663">
+    </testcase>
+  </testsuite>
+  <testsuite name="OleObjectsController test get_worksheet_ole_objects test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:00" time="0.75">
+    <testcase classname="OleObjectsController test get_worksheet_ole_objects test" name="should call GetWorksheetOleObjects successfully" time="0.748">
+    </testcase>
+  </testsuite>
+  <testsuite name="OleObjectsController test get_worksheet_ole_object test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:01" time="0.614">
+    <testcase classname="OleObjectsController test get_worksheet_ole_object test" name="should call GetWorksheetOleObject successfully" time="0.613">
+    </testcase>
+  </testsuite>
+  <testsuite name="OleObjectsController test delete_worksheet_ole_objects test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:01" time="1.248">
+    <testcase classname="OleObjectsController test delete_worksheet_ole_objects test" name="should call DeleteWorksheetOleObjects successfully" time="1.246">
+    </testcase>
+  </testsuite>
+  <testsuite name="OleObjectsController test delete_worksheet_ole_object test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:03" time="1.477">
+    <testcase classname="OleObjectsController test delete_worksheet_ole_object test" name="should call DeleteWorksheetOleObject successfully" time="1.476">
+    </testcase>
+  </testsuite>
+  <testsuite name="OleObjectsController test post_update_worksheet_ole_object test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:04" time="0.863">
+    <testcase classname="OleObjectsController test post_update_worksheet_ole_object test" name="should call PostUpdateWorksheetOleObject successfully" time="0.862">
+    </testcase>
+  </testsuite>
+  <testsuite name="OleObjectsController test put_worksheet_ole_object test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:37:05" time="1.142">
+    <testcase classname="OleObjectsController test put_worksheet_ole_object test" name="should call PutWorksheetOleObject successfully" time="1.141">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test get_vertical_page_breaks test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:06" time="0.709">
+    <testcase classname="PageBreaksController test get_vertical_page_breaks test" name="should call GetVerticalPageBreaks successfully" time="0.708">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test get_horizontal_page_breaks test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:07" time="0.389">
+    <testcase classname="PageBreaksController test get_horizontal_page_breaks test" name="should call GetHorizontalPageBreaks successfully" time="0.387">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test get_vertical_page_break test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:07" time="0.417">
+    <testcase classname="PageBreaksController test get_vertical_page_break test" name="should call GetVerticalPageBreak successfully" time="0.416">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test get_horizontal_page_break test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:08" time="0.394">
+    <testcase classname="PageBreaksController test get_horizontal_page_break test" name="should call GetHorizontalPageBreak successfully" time="0.393">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test put_vertical_page_break test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:08" time="0.724">
+    <testcase classname="PageBreaksController test put_vertical_page_break test" name="should call PutVerticalPageBreak successfully" time="0.722">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test put_horizontal_page_break test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:09" time="0.841">
+    <testcase classname="PageBreaksController test put_horizontal_page_break test" name="should call PutHorizontalPageBreak successfully" time="0.839">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test delete_vertical_page_breaks test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:10" time="1.712">
+    <testcase classname="PageBreaksController test delete_vertical_page_breaks test" name="should call DeleteVerticalPageBreaks successfully" time="1.71">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test delete_horizontal_page_breaks test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:11" time="4.573">
+    <testcase classname="PageBreaksController test delete_horizontal_page_breaks test" name="should call DeleteHorizontalPageBreaks successfully" time="4.571">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test delete_vertical_page_break test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:16" time="0.748">
+    <testcase classname="PageBreaksController test delete_vertical_page_break test" name="should call DeleteVerticalPageBreak successfully" time="0.747">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageBreaksController test delete_horizontal_page_break test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:17" time="1.715">
+    <testcase classname="PageBreaksController test delete_horizontal_page_break test" name="should call DeleteHorizontalPageBreak successfully" time="1.713">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageSetupController test get_page_setup test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:18" time="2.201">
+    <testcase classname="PageSetupController test get_page_setup test" name="should call GetPageSetup successfully" time="2.199">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageSetupController test post_page_setup test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:21" time="0.752">
+    <testcase classname="PageSetupController test post_page_setup test" name="should call PostPageSetup successfully" time="0.751">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageSetupController test delete_header_footer test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:21" time="0.84">
+    <testcase classname="PageSetupController test delete_header_footer test" name="should call DeleteHeaderFooter successfully" time="0.839">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageSetupController test get_header test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:22" time="0.367">
+    <testcase classname="PageSetupController test get_header test" name="should call GetHeader successfully" time="0.366">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageSetupController test post_header test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:22" time="0.723">
+    <testcase classname="PageSetupController test post_header test" name="should call PostHeader successfully" time="0.721">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageSetupController test get_footer test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:23" time="0.365">
+    <testcase classname="PageSetupController test get_footer test" name="should call GetFooter successfully" time="0.364">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageSetupController test post_footer test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:24" time="0.734">
+    <testcase classname="PageSetupController test post_footer test" name="should call PostFooter successfully" time="0.73">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageSetupController test post_fit_wide_to_pages test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:24" time="0.729">
+    <testcase classname="PageSetupController test post_fit_wide_to_pages test" name="should call PostFitWideToPages successfully" time="0.727">
+    </testcase>
+  </testsuite>
+  <testsuite name="PageSetupController test post_fit_tall_to_pages test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:25" time="0.985">
+    <testcase classname="PageSetupController test post_fit_tall_to_pages test" name="should call PostFitTallToPages successfully" time="0.984">
+    </testcase>
+  </testsuite>
+  <testsuite name="PicturesController test get_worksheet_pictures test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:26" time="0.774">
+    <testcase classname="PicturesController test get_worksheet_pictures test" name="should call GetWorksheetPictures successfully" time="0.774">
+    </testcase>
+  </testsuite>
+  <testsuite name="PicturesController test get_worksheet_picture_with_format test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:27" time="0.886">
+    <testcase classname="PicturesController test get_worksheet_picture_with_format test" name="should call GetWorksheetPictureWithFormat successfully" time="0.886">
+    </testcase>
+  </testsuite>
+  <testsuite name="PicturesController test put_worksheet_add_picture test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:28" time="0.938">
+    <testcase classname="PicturesController test put_worksheet_add_picture test" name="should call PutWorksheetAddPicture successfully" time="0.937">
+    </testcase>
+  </testsuite>
+  <testsuite name="PicturesController test post_worksheet_picture test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:29" time="0.857">
+    <testcase classname="PicturesController test post_worksheet_picture test" name="should call PostWorksheetPicture successfully" time="0.855">
+    </testcase>
+  </testsuite>
+  <testsuite name="PicturesController test delete_worksheet_picture test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:29" time="0.755">
+    <testcase classname="PicturesController test delete_worksheet_picture test" name="should call DeleteWorksheetPicture successfully" time="0.754">
+    </testcase>
+  </testsuite>
+  <testsuite name="PicturesController test delete_worksheet_pictures test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:30" time="0.773">
+    <testcase classname="PicturesController test delete_worksheet_pictures test" name="should call DeleteWorksheetPictures successfully" time="0.773">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test get_worksheet_pivot_tables test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:31" time="0.69">
+    <testcase classname="PivotTablesController test get_worksheet_pivot_tables test" name="should call GetWorksheetPivotTables successfully" time="0.688">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test get_worksheet_pivot_table test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:32" time="0.635">
+    <testcase classname="PivotTablesController test get_worksheet_pivot_table test" name="should call GetWorksheetPivotTable successfully" time="0.634">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test get_pivot_table_field test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:32" time="0.375">
+    <testcase classname="PivotTablesController test get_pivot_table_field test" name="should call GetPivotTableField successfully" time="0.373">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test get_worksheet_pivot_table_filters test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:33" time="0.372">
+    <testcase classname="PivotTablesController test get_worksheet_pivot_table_filters test" name="should call GetWorksheetPivotTableFilters successfully" time="0.37">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test put_worksheet_pivot_table test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:33" time="0.718">
+    <testcase classname="PivotTablesController test put_worksheet_pivot_table test" name="should call PutWorksheetPivotTable successfully" time="0.715">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test put_pivot_table_field test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:34" time="1.521">
+    <testcase classname="PivotTablesController test put_pivot_table_field test" name="should call PutPivotTableField successfully" time="1.52">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test post_pivot_table_field_hide_item test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:35" time="0.692">
+    <testcase classname="PivotTablesController test post_pivot_table_field_hide_item test" name="should call PostPivotTableFieldHideItem successfully" time="0.691">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test post_pivot_table_field_move_to test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:36" time="0.742">
+    <testcase classname="PivotTablesController test post_pivot_table_field_move_to test" name="should call PostPivotTableFieldMoveTo successfully" time="0.74">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test post_pivot_table_cell_style test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:37" time="0.675">
+    <testcase classname="PivotTablesController test post_pivot_table_cell_style test" name="should call PostPivotTableCellStyle successfully" time="0.673">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test post_pivot_table_style test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:37" time="0.683">
+    <testcase classname="PivotTablesController test post_pivot_table_style test" name="should call PostPivotTableStyle successfully" time="0.681">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test post_pivot_table_update_pivot_fields test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:38" time="1.169">
+    <testcase classname="PivotTablesController test post_pivot_table_update_pivot_fields test" name="should call PostPivotTableUpdatePivotFields successfully" time="1.169">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test post_pivot_table_update_pivot_field test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:39" time="0.675">
+    <testcase classname="PivotTablesController test post_pivot_table_update_pivot_field test" name="should call PostPivotTableUpdatePivotField successfully" time="0.674">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test post_worksheet_pivot_table_calculate test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:40" time="0.734">
+    <testcase classname="PivotTablesController test post_worksheet_pivot_table_calculate test" name="should call PostWorksheetPivotTableCalculate successfully" time="0.732">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test post_worksheet_pivot_table_move test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:41" time="0.774">
+    <testcase classname="PivotTablesController test post_worksheet_pivot_table_move test" name="should call PostWorksheetPivotTableMove successfully" time="0.772">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test delete_worksheet_pivot_tables test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:41" time="0.697">
+    <testcase classname="PivotTablesController test delete_worksheet_pivot_tables test" name="should call DeleteWorksheetPivotTables successfully" time="0.696">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test delete_worksheet_pivot_table test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:42" time="1.198">
+    <testcase classname="PivotTablesController test delete_worksheet_pivot_table test" name="should call DeleteWorksheetPivotTable successfully" time="1.197">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test delete_pivot_table_field test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:43" time="0.69">
+    <testcase classname="PivotTablesController test delete_pivot_table_field test" name="should call DeletePivotTableField successfully" time="0.689">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test delete_worksheet_pivot_table_filters test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:44" time="0.709">
+    <testcase classname="PivotTablesController test delete_worksheet_pivot_table_filters test" name="should call DeleteWorksheetPivotTableFilters successfully" time="0.707">
+    </testcase>
+  </testsuite>
+  <testsuite name="PivotTablesController test delete_worksheet_pivot_table_filter test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:45" time="1.767">
+    <testcase classname="PivotTablesController test delete_worksheet_pivot_table_filter test" name="should call DeleteWorksheetPivotTableFilter successfully" time="1.765">
+    </testcase>
+  </testsuite>
+  <testsuite name="PropertiesController test get_document_properties test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:47" time="0.744">
+    <testcase classname="PropertiesController test get_document_properties test" name="should call GetDocumentProperties successfully" time="0.743">
+    </testcase>
+  </testsuite>
+  <testsuite name="PropertiesController test get_document_property test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:47" time="0.377">
+    <testcase classname="PropertiesController test get_document_property test" name="should call GetDocumentProperty successfully" time="0.375">
+    </testcase>
+  </testsuite>
+  <testsuite name="PropertiesController test put_document_property test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:48" time="0.77">
+    <testcase classname="PropertiesController test put_document_property test" name="should call PutDocumentProperty successfully" time="0.768">
+    </testcase>
+  </testsuite>
+  <testsuite name="PropertiesController test delete_document_property test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:48" time="1.407">
+    <testcase classname="PropertiesController test delete_document_property test" name="should call DeleteDocumentProperty successfully" time="1.406">
+    </testcase>
+  </testsuite>
+  <testsuite name="PropertiesController test delete_document_properties test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:50" time="0.764">
+    <testcase classname="PropertiesController test delete_document_properties test" name="should call DeleteDocumentProperties successfully" time="0.763">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_ranges_copy test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:51" time="1.142">
+    <testcase classname="RangesController test post_worksheet_cells_ranges_copy test" name="should call PostWorksheetCellsRangesCopy successfully" time="1.142">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_range_merge test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:52" time="0.892">
+    <testcase classname="RangesController test post_worksheet_cells_range_merge test" name="should call PostWorksheetCellsRangeMerge successfully" time="0.891">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_range_un_merge test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:53" time="0.76">
+    <testcase classname="RangesController test post_worksheet_cells_range_un_merge test" name="should call PostWorksheetCellsRangeUnMerge successfully" time="0.758">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_range_style test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:53" time="1.227">
+    <testcase classname="RangesController test post_worksheet_cells_range_style test" name="should call PostWorksheetCellsRangeStyle successfully" time="1.225">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test get_worksheet_cells_range_value test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:55" time="0.909">
+    <testcase classname="RangesController test get_worksheet_cells_range_value test" name="should call GetWorksheetCellsRangeValue successfully" time="0.907">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_range_value test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:56" time="0.768">
+    <testcase classname="RangesController test post_worksheet_cells_range_value test" name="should call PostWorksheetCellsRangeValue successfully" time="0.766">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_range_move_to test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:56" time="0.749">
+    <testcase classname="RangesController test post_worksheet_cells_range_move_to test" name="should call PostWorksheetCellsRangeMoveTo successfully" time="0.747">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_range_outline_border test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:57" time="1.276">
+    <testcase classname="RangesController test post_worksheet_cells_range_outline_border test" name="should call PostWorksheetCellsRangeOutlineBorder successfully" time="1.274">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_range_column_width test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:58" time="0.827">
+    <testcase classname="RangesController test post_worksheet_cells_range_column_width test" name="should call PostWorksheetCellsRangeColumnWidth successfully" time="0.826">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_range_row_height test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:37:59" time="0.756">
+    <testcase classname="RangesController test post_worksheet_cells_range_row_height test" name="should call PostWorksheetCellsRangeRowHeight successfully" time="0.754">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test put_worksheet_cells_range test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:00" time="1.044">
+    <testcase classname="RangesController test put_worksheet_cells_range test" name="should call PutWorksheetCellsRange successfully" time="1.043">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test delete_worksheet_cells_range test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:01" time="0.885">
+    <testcase classname="RangesController test delete_worksheet_cells_range test" name="should call DeleteWorksheetCellsRange successfully" time="0.883">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangesController test post_worksheet_cells_range_sort test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:02" time="0.704">
+    <testcase classname="RangesController test post_worksheet_cells_range_sort test" name="should call PostWorksheetCellsRangeSort successfully" time="0.703">
+    </testcase>
+  </testsuite>
+  <testsuite name="ShapesController test get_worksheet_shapes test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:03" time="0.801">
+    <testcase classname="ShapesController test get_worksheet_shapes test" name="should call GetWorksheetShapes successfully" time="0.8">
+    </testcase>
+  </testsuite>
+  <testsuite name="ShapesController test get_worksheet_shape test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:03" time="0.487">
+    <testcase classname="ShapesController test get_worksheet_shape test" name="should call GetWorksheetShape successfully" time="0.486">
+    </testcase>
+  </testsuite>
+  <testsuite name="ShapesController test put_worksheet_shape test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:04" time="0.742">
+    <testcase classname="ShapesController test put_worksheet_shape test" name="should call PutWorksheetShape successfully" time="0.741">
+    </testcase>
+  </testsuite>
+  <testsuite name="ShapesController test delete_worksheet_shapes test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:05" time="1.73">
+    <testcase classname="ShapesController test delete_worksheet_shapes test" name="should call DeleteWorksheetShapes successfully" time="1.729">
+    </testcase>
+  </testsuite>
+  <testsuite name="ShapesController test delete_worksheet_shape test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:06" time="0.731">
+    <testcase classname="ShapesController test delete_worksheet_shape test" name="should call DeleteWorksheetShape successfully" time="0.73">
+    </testcase>
+  </testsuite>
+  <testsuite name="ShapesController test post_worksheet_shape test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:38:07" time="0.487">
+    <testcase classname="ShapesController test post_worksheet_shape test" name="should call PostWorksheetShape successfully" time="0.484">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ShapesController test post_worksheet_group_shape test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:08" time="0.71">
+    <testcase classname="ShapesController test post_worksheet_group_shape test" name="should call PostWorksheetGroupShape successfully" time="0.709">
+    </testcase>
+  </testsuite>
+  <testsuite name="ShapesController test post_worksheet_ungroup_shape test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:08" time="0.796">
+    <testcase classname="ShapesController test post_worksheet_ungroup_shape test" name="should call PostWorksheetUngroupShape successfully" time="0.794">
+    </testcase>
+  </testsuite>
+  <testsuite name="SparklineGroupsController test get_worksheet_sparkline_groups test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:09" time="0.744">
+    <testcase classname="SparklineGroupsController test get_worksheet_sparkline_groups test" name="should call GetWorksheetSparklineGroups successfully" time="0.742">
+    </testcase>
+  </testsuite>
+  <testsuite name="SparklineGroupsController test get_worksheet_sparkline_group test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:10" time="1.61">
+    <testcase classname="SparklineGroupsController test get_worksheet_sparkline_group test" name="should call GetWorksheetSparklineGroup successfully" time="1.608">
+    </testcase>
+  </testsuite>
+  <testsuite name="SparklineGroupsController test delete_worksheet_sparkline_groups test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:11" time="1.473">
+    <testcase classname="SparklineGroupsController test delete_worksheet_sparkline_groups test" name="should call DeleteWorksheetSparklineGroups successfully" time="1.471">
+    </testcase>
+  </testsuite>
+  <testsuite name="SparklineGroupsController test delete_worksheet_sparkline_group test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:13" time="0.732">
+    <testcase classname="SparklineGroupsController test delete_worksheet_sparkline_group test" name="should call DeleteWorksheetSparklineGroup successfully" time="0.73">
+    </testcase>
+  </testsuite>
+  <testsuite name="SparklineGroupsController test put_worksheet_sparkline_group test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:14" time="0.737">
+    <testcase classname="SparklineGroupsController test put_worksheet_sparkline_group test" name="should call PutWorksheetSparklineGroup successfully" time="0.735">
+    </testcase>
+  </testsuite>
+  <testsuite name="SparklineGroupsController test post_worksheet_sparkline_group test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:14" time="1.691">
+    <testcase classname="SparklineGroupsController test post_worksheet_sparkline_group test" name="should call PostWorksheetSparklineGroup successfully" time="1.69">
+    </testcase>
+  </testsuite>
+  <testsuite name="TextProcessingController test post_add_text_content test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:16" time="2.776">
+    <testcase classname="TextProcessingController test post_add_text_content test" name="should call PostAddTextContent successfully" time="2.774">
+    </testcase>
+  </testsuite>
+  <testsuite name="TextProcessingController test post_trim_content test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:19" time="2.047">
+    <testcase classname="TextProcessingController test post_trim_content test" name="should call PostTrimContent successfully" time="2.046">
+    </testcase>
+  </testsuite>
+  <testsuite name="TextProcessingController test post_update_word_case test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:21" time="1.688">
+    <testcase classname="TextProcessingController test post_update_word_case test" name="should call PostUpdateWordCase successfully" time="1.687">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_digital_signature test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:23" time="2.691">
+    <testcase classname="WorkbookController test post_digital_signature test" name="should call PostDigitalSignature successfully" time="2.689">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_encrypt_workbook test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:25" time="1.406">
+    <testcase classname="WorkbookController test post_encrypt_workbook test" name="should call PostEncryptWorkbook successfully" time="1.405">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test delete_decrypt_workbook test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:27" time="0.985">
+    <testcase classname="WorkbookController test delete_decrypt_workbook test" name="should call DeleteDecryptWorkbook successfully" time="0.985">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_protect_workbook test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:28" time="0.757">
+    <testcase classname="WorkbookController test post_protect_workbook test" name="should call PostProtectWorkbook successfully" time="0.757">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test delete_un_protect_workbook test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:38:28" time="0.855">
+    <testcase classname="WorkbookController test delete_un_protect_workbook test" name="should call DeleteUnProtectWorkbook successfully" time="0.854">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test get_workbook_default_style test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:29" time="0.641">
+    <testcase classname="WorkbookController test get_workbook_default_style test" name="should call GetWorkbookDefaultStyle successfully" time="0.641">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test get_workbook_text_items test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:30" time="1.462">
+    <testcase classname="WorkbookController test get_workbook_text_items test" name="should call GetWorkbookTextItems successfully" time="1.462">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test get_workbook_names test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:31" time="0.455">
+    <testcase classname="WorkbookController test get_workbook_names test" name="should call GetWorkbookNames successfully" time="0.454">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test put_workbook_name test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:32" time="1.591">
+    <testcase classname="WorkbookController test put_workbook_name test" name="should call PutWorkbookName successfully" time="1.589">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test get_workbook_name test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:33" time="0.419">
+    <testcase classname="WorkbookController test get_workbook_name test" name="should call GetWorkbookName successfully" time="0.417">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_workbook_name test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:34" time="1.173">
+    <testcase classname="WorkbookController test post_workbook_name test" name="should call PostWorkbookName successfully" time="1.172">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test get_workbook_name_value test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:38:35" time="0.364">
+    <testcase classname="WorkbookController test get_workbook_name_value test" name="should call GetWorkbookNameValue successfully" time="0.362">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test delete_workbook_names test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:35" time="1.027">
+    <testcase classname="WorkbookController test delete_workbook_names test" name="should call DeleteWorkbookNames successfully" time="1.025">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test delete_workbook_name test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:36" time="0.91">
+    <testcase classname="WorkbookController test delete_workbook_name test" name="should call DeleteWorkbookName successfully" time="0.908">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test put_document_protect_from_changes test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:37" time="1.568">
+    <testcase classname="WorkbookController test put_document_protect_from_changes test" name="should call PutDocumentProtectFromChanges successfully" time="1.567">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test delete_document_un_protect_from_changes test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:39" time="0.979">
+    <testcase classname="WorkbookController test delete_document_un_protect_from_changes test" name="should call DeleteDocumentUnProtectFromChanges successfully" time="0.978">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_workbooks_merge test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:40" time="1.299">
+    <testcase classname="WorkbookController test post_workbooks_merge test" name="should call PostWorkbooksMerge successfully" time="1.297">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_workbooks_text_search test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:41" time="0.952">
+    <testcase classname="WorkbookController test post_workbooks_text_search test" name="should call PostWorkbooksTextSearch successfully" time="0.95">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_workbook_text_replace test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:42" time="0.909">
+    <testcase classname="WorkbookController test post_workbook_text_replace test" name="should call PostWorkbookTextReplace successfully" time="0.907">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_workbook_get_smart_marker_result test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:43" time="1.273">
+    <testcase classname="WorkbookController test post_workbook_get_smart_marker_result test" name="should call PostWorkbookGetSmartMarkerResult successfully" time="1.271">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test put_workbook_create test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:44" time="1.01">
+    <testcase classname="WorkbookController test put_workbook_create test" name="should call PutWorkbookCreate successfully" time="1.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_workbook_split test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:45" time="3.063">
+    <testcase classname="WorkbookController test post_workbook_split test" name="should call PostWorkbookSplit successfully" time="3.061">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_import_data test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:48" time="0.795">
+    <testcase classname="WorkbookController test post_import_data test" name="should call PostImportData successfully" time="0.793">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_workbook_calculate_formula test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:49" time="1.354">
+    <testcase classname="WorkbookController test post_workbook_calculate_formula test" name="should call PostWorkbookCalculateFormula successfully" time="1.351">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_autofit_workbook_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:51" time="0.742">
+    <testcase classname="WorkbookController test post_autofit_workbook_rows test" name="should call PostAutofitWorkbookRows successfully" time="0.741">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_autofit_workbook_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:51" time="0.992">
+    <testcase classname="WorkbookController test post_autofit_workbook_columns test" name="should call PostAutofitWorkbookColumns successfully" time="0.99">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test get_workbook_settings test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:52" time="0.37">
+    <testcase classname="WorkbookController test get_workbook_settings test" name="should call GetWorkbookSettings successfully" time="0.368">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test post_workbook_settings test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:53" time="0.723">
+    <testcase classname="WorkbookController test post_workbook_settings test" name="should call PostWorkbookSettings successfully" time="0.721">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test put_workbook_background test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:53" time="1.017">
+    <testcase classname="WorkbookController test put_workbook_background test" name="should call PutWorkbookBackground successfully" time="1.015">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test delete_workbook_background test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:54" time="0.832">
+    <testcase classname="WorkbookController test delete_workbook_background test" name="should call DeleteWorkbookBackground successfully" time="0.831">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test put_workbook_water_marker test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:55" time="1.564">
+    <testcase classname="WorkbookController test put_workbook_water_marker test" name="should call PutWorkbookWaterMarker successfully" time="1.562">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkbookController test get_page_count test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:57" time="0.379">
+    <testcase classname="WorkbookController test get_page_count test" name="should call GetPageCount successfully" time="0.378">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_worksheets test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:57" time="0.735">
+    <testcase classname="WorksheetController test get_worksheets test" name="should call GetWorksheets successfully" time="0.734">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_worksheet_with_format test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:58" time="0.837">
+    <testcase classname="WorksheetController test get_worksheet_with_format test" name="should call GetWorksheetWithFormat successfully" time="0.835">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test put_change_visibility_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:38:59" time="0.925">
+    <testcase classname="WorksheetController test put_change_visibility_worksheet test" name="should call PutChangeVisibilityWorksheet successfully" time="0.923">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test put_active_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:00" time="1.223">
+    <testcase classname="WorksheetController test put_active_worksheet test" name="should call PutActiveWorksheet successfully" time="1.221">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test put_insert_new_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:01" time="0.925">
+    <testcase classname="WorksheetController test put_insert_new_worksheet test" name="should call PutInsertNewWorksheet successfully" time="0.923">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test put_add_new_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:02" time="0.923">
+    <testcase classname="WorksheetController test put_add_new_worksheet test" name="should call PutAddNewWorksheet successfully" time="0.923">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test delete_worksheet test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:39:03" time="0.451">
+    <testcase classname="WorksheetController test delete_worksheet test" name="should call DeleteWorksheet successfully" time="0.448">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test delete_worksheets test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:03" time="1.221">
+    <testcase classname="WorksheetController test delete_worksheets test" name="should call DeleteWorksheets successfully" time="1.219">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_move_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:04" time="0.721">
+    <testcase classname="WorksheetController test post_move_worksheet test" name="should call PostMoveWorksheet successfully" time="0.72">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test put_protect_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:05" time="0.698">
+    <testcase classname="WorksheetController test put_protect_worksheet test" name="should call PutProtectWorksheet successfully" time="0.696">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test delete_unprotect_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:06" time="0.7">
+    <testcase classname="WorksheetController test delete_unprotect_worksheet test" name="should call DeleteUnprotectWorksheet successfully" time="0.698">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_worksheet_text_items test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:07" time="0.871">
+    <testcase classname="WorksheetController test get_worksheet_text_items test" name="should call GetWorksheetTextItems successfully" time="0.87">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_worksheet_comments test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:07" time="0.364">
+    <testcase classname="WorksheetController test get_worksheet_comments test" name="should call GetWorksheetComments successfully" time="0.362">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_worksheet_comment test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:08" time="0.504">
+    <testcase classname="WorksheetController test get_worksheet_comment test" name="should call GetWorksheetComment successfully" time="0.501">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test put_worksheet_comment test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:08" time="0.872">
+    <testcase classname="WorksheetController test put_worksheet_comment test" name="should call PutWorksheetComment successfully" time="0.871">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_worksheet_comment test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:09" time="1.782">
+    <testcase classname="WorksheetController test post_worksheet_comment test" name="should call PostWorksheetComment successfully" time="1.781">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test delete_worksheet_comment test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:11" time="0.746">
+    <testcase classname="WorksheetController test delete_worksheet_comment test" name="should call DeleteWorksheetComment successfully" time="0.744">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test delete_worksheet_comments test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:12" time="0.705">
+    <testcase classname="WorksheetController test delete_worksheet_comments test" name="should call DeleteWorksheetComments successfully" time="0.704">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_worksheet_merged_cells test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:12" time="0.507">
+    <testcase classname="WorksheetController test get_worksheet_merged_cells test" name="should call GetWorksheetMergedCells successfully" time="0.505">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_worksheet_merged_cell test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:13" time="0.484">
+    <testcase classname="WorksheetController test get_worksheet_merged_cell test" name="should call GetWorksheetMergedCell successfully" time="0.482">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_worksheet_calculate_formula test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:13" time="1.102">
+    <testcase classname="WorksheetController test get_worksheet_calculate_formula test" name="should call GetWorksheetCalculateFormula successfully" time="1.1">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_worksheet_calculate_formula test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:15" time="0.575">
+    <testcase classname="WorksheetController test post_worksheet_calculate_formula test" name="should call PostWorksheetCalculateFormula successfully" time="0.574">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_worksheet_text_search test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:15" time="0.99">
+    <testcase classname="WorksheetController test post_worksheet_text_search test" name="should call PostWorksheetTextSearch successfully" time="0.989">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_worksheet_text_replace test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:16" time="1.192">
+    <testcase classname="WorksheetController test post_worksheet_text_replace test" name="should call PostWorksheetTextReplace successfully" time="1.191">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_worksheet_range_sort test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:17" time="0.708">
+    <testcase classname="WorksheetController test post_worksheet_range_sort test" name="should call PostWorksheetRangeSort successfully" time="0.708">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_autofit_worksheet_row test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:18" time="1.995">
+    <testcase classname="WorksheetController test post_autofit_worksheet_row test" name="should call PostAutofitWorksheetRow successfully" time="1.993">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_autofit_worksheet_rows test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:20" time="0.869">
+    <testcase classname="WorksheetController test post_autofit_worksheet_rows test" name="should call PostAutofitWorksheetRows successfully" time="0.868">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_autofit_worksheet_columns test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:21" time="0.775">
+    <testcase classname="WorksheetController test post_autofit_worksheet_columns test" name="should call PostAutofitWorksheetColumns successfully" time="0.774">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test put_worksheet_background test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:22" time="0.984">
+    <testcase classname="WorksheetController test put_worksheet_background test" name="should call PutWorksheetBackground successfully" time="0.982">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test delete_worksheet_background test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:23" time="0.753">
+    <testcase classname="WorksheetController test delete_worksheet_background test" name="should call DeleteWorksheetBackground successfully" time="0.751">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test put_worksheet_freeze_panes test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:23" time="1.192">
+    <testcase classname="WorksheetController test put_worksheet_freeze_panes test" name="should call PutWorksheetFreezePanes successfully" time="1.19">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test delete_worksheet_freeze_panes test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:25" time="0.719">
+    <testcase classname="WorksheetController test delete_worksheet_freeze_panes test" name="should call DeleteWorksheetFreezePanes successfully" time="0.717">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_copy_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:25" time="0.854">
+    <testcase classname="WorksheetController test post_copy_worksheet test" name="should call PostCopyWorksheet successfully" time="0.853">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_rename_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:26" time="0.752">
+    <testcase classname="WorksheetController test post_rename_worksheet test" name="should call PostRenameWorksheet successfully" time="0.751">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_update_worksheet_property test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:39:27" time="0.7">
+    <testcase classname="WorksheetController test post_update_worksheet_property test" name="should call PostUpdateWorksheetProperty successfully" time="0.698">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_named_ranges test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:28" time="0.408">
+    <testcase classname="WorksheetController test get_named_ranges test" name="should call GetNamedRanges successfully" time="0.406">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_named_range_value test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:28" time="0.963">
+    <testcase classname="WorksheetController test get_named_range_value test" name="should call GetNamedRangeValue successfully" time="0.961">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test post_update_worksheet_zoom test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:29" time="0.78">
+    <testcase classname="WorksheetController test post_update_worksheet_zoom test" name="should call PostUpdateWorksheetZoom successfully" time="0.779">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetController test get_worksheet_page_count test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:30" time="0.382">
+    <testcase classname="WorksheetController test get_worksheet_page_count test" name="should call GetWorksheetPageCount successfully" time="0.38">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetValidationsController test get_worksheet_validations test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:30" time="1.317">
+    <testcase classname="WorksheetValidationsController test get_worksheet_validations test" name="should call GetWorksheetValidations successfully" time="1.315">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetValidationsController test get_worksheet_validation test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:32" time="0.418">
+    <testcase classname="WorksheetValidationsController test get_worksheet_validation test" name="should call GetWorksheetValidation successfully" time="0.416">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetValidationsController test put_worksheet_validation test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:32" time="0.911">
+    <testcase classname="WorksheetValidationsController test put_worksheet_validation test" name="should call PutWorksheetValidation successfully" time="0.909">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetValidationsController test post_worksheet_validation test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:33" time="1.449">
+    <testcase classname="WorksheetValidationsController test post_worksheet_validation test" name="should call PostWorksheetValidation successfully" time="1.447">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetValidationsController test delete_worksheet_validation test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:34" time="1.328">
+    <testcase classname="WorksheetValidationsController test delete_worksheet_validation test" name="should call DeleteWorksheetValidation successfully" time="1.326">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorksheetValidationsController test delete_worksheet_validations test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:36" time="0.732">
+    <testcase classname="WorksheetValidationsController test delete_worksheet_validations test" name="should call DeleteWorksheetValidations successfully" time="0.731">
+    </testcase>
+  </testsuite>
+  <testsuite name="XmlController test post_workbook_export_xml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:36" time="0.756">
+    <testcase classname="XmlController test post_workbook_export_xml test" name="should call PostWorkbookExportXML successfully" time="0.754">
+    </testcase>
+  </testsuite>
+  <testsuite name="XmlController test post_workbook_import_xml test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:37" time="1.972">
+    <testcase classname="XmlController test post_workbook_import_xml test" name="should call PostWorkbookImportXML successfully" time="1.971">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test workbook_save_as_csv__out_result_post_excel_save_ascsv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:39" time="1.122">
+    <testcase classname="Conversion test workbook_save_as_csv__out_result_post_excel_save_ascsv test" name="should call SaveSpreadsheetAs successfully" time="1.12">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test workbook_save_as_pdf__out_result_post_excel_save_aspdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:40" time="1.606">
+    <testcase classname="Conversion test workbook_save_as_pdf__out_result_post_excel_save_aspdf test" name="should call SaveSpreadsheetAs successfully" time="1.604">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_workbook_png test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:42" time="15.409">
+    <testcase classname="Conversion test convert_workbook_png test" name="should call ConvertSpreadsheet successfully" time="15.409">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_workbook_sql test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:39:57" time="7.428">
+    <testcase classname="Conversion test convert_workbook_sql test" name="should call ConvertSpreadsheet successfully" time="7.427">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_spreadsheet_to_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:05" time="12.608">
+    <testcase classname="Conversion test convert_spreadsheet_to_pdf test" name="should call ConvertSpreadsheetToPdf successfully" time="12.607">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_spreadsheet_to_csv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:17" time="2.297">
+    <testcase classname="Conversion test convert_spreadsheet_to_csv test" name="should call ConvertSpreadsheetToCsv successfully" time="2.296">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_workbook_save_cloud_csv__out_result_convert_workbookcsv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:20" time="7.375">
+    <testcase classname="Conversion test convert_workbook_save_cloud_csv__out_result_convert_workbookcsv test" name="should call ConvertSpreadsheet successfully" time="7.374">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_worksheet_to_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:27" time="2.653">
+    <testcase classname="Conversion test convert_worksheet_to_svg test" name="should call ConvertWorksheetToImage successfully" time="2.652">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_worksheet_to_png test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:30" time="1.786">
+    <testcase classname="Conversion test convert_worksheet_to_png test" name="should call ConvertWorksheetToImage successfully" time="1.783">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_worksheet_to_tiff test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:31" time="1.152">
+    <testcase classname="Conversion test convert_worksheet_to_tiff test" name="should call ConvertWorksheetToImage successfully" time="1.15">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_worksheet_to_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:33" time="1.72">
+    <testcase classname="Conversion test convert_worksheet_to_pdf test" name="should call ConvertWorksheetToPdf successfully" time="1.719">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_table_to_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:34" time="1.806">
+    <testcase classname="Conversion test convert_table_to_svg test" name="should call ConvertTableToImage successfully" time="1.806">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_table_to_png test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:36" time="0.864">
+    <testcase classname="Conversion test convert_table_to_png test" name="should call ConvertTableToImage successfully" time="0.862">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_table_to_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:37" time="5.43">
+    <testcase classname="Conversion test convert_table_to_pdf test" name="should call ConvertTableToPdf successfully" time="5.428">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_table_to_csv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:42" time="1.117">
+    <testcase classname="Conversion test convert_table_to_csv test" name="should call ConvertTableToCsv successfully" time="1.117">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_table_to_html test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:43" time="1.656">
+    <testcase classname="Conversion test convert_table_to_html test" name="should call ConvertTableToHtml successfully" time="1.655">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_table_to_json test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:45" time="1.083">
+    <testcase classname="Conversion test convert_table_to_json test" name="should call ConvertTableToJson successfully" time="1.081">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_range_to_image test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:46" time="1.05">
+    <testcase classname="Conversion test convert_range_to_image test" name="should call ConvertRangeToImage successfully" time="1.049">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_range_to_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:47" time="1.073">
+    <testcase classname="Conversion test convert_range_to_pdf test" name="should call ConvertRangeToPdf successfully" time="1.071">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_range_to_csv test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:48" time="0.536">
+    <testcase classname="Conversion test convert_range_to_csv test" name="should call ConvertRangeToCsv successfully" time="0.535">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_range_to_html test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:49" time="2.058">
+    <testcase classname="Conversion test convert_range_to_html test" name="should call ConvertRangeToHtml successfully" time="2.056">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_range_to_json test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:51" time="0.533">
+    <testcase classname="Conversion test convert_range_to_json test" name="should call ConvertRangeToJson successfully" time="0.531">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_chart_to_image_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:51" time="1.337">
+    <testcase classname="Conversion test convert_chart_to_image_svg test" name="should call ConvertChartToImage successfully" time="1.337">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test convert_chart_to_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:53" time="2.881">
+    <testcase classname="Conversion test convert_chart_to_pdf test" name="should call ConvertChartToPdf successfully" time="2.88">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test export_spreadsheet_as_format_pdf test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:40:56" time="10.323">
+    <testcase classname="Conversion test export_spreadsheet_as_format_pdf test" name="should call ExportSpreadsheetAsFormat successfully" time="10.322">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test export_spreadsheet_as_format_pptx test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:06" time="16.558">
+    <testcase classname="Conversion test export_spreadsheet_as_format_pptx test" name="should call ExportSpreadsheetAsFormat successfully" time="16.557">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test export_spreadsheet_as_format_json test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:23" time="1.938">
+    <testcase classname="Conversion test export_spreadsheet_as_format_json test" name="should call ExportSpreadsheetAsFormat successfully" time="1.937">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test export_worksheet_as_format test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:25" time="3.168">
+    <testcase classname="Conversion test export_worksheet_as_format test" name="should call ExportWorksheetAsFormat successfully" time="3.164">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test export_chart_as_format_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:28" time="1.128">
+    <testcase classname="Conversion test export_chart_as_format_svg test" name="should call ExportChartAsFormat successfully" time="1.126">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test export_table_as_format_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:29" time="0.872">
+    <testcase classname="Conversion test export_table_as_format_svg test" name="should call ExportTableAsFormat successfully" time="0.87">
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversion test export_range_as_format_svg test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:30" time="1.362">
+    <testcase classname="Conversion test export_range_as_format_svg test" name="should call ExportRangeAsFormat successfully" time="1.36">
+    </testcase>
+  </testsuite>
+  <testsuite name="ImportData test import_data_into_spreadsheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:31" time="9.123">
+    <testcase classname="ImportData test import_data_into_spreadsheet test" name="should call ImportDataIntoSpreadsheet successfully" time="9.122">
+    </testcase>
+  </testsuite>
+  <testsuite name="Merger test merge_remote_spreadsheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:40" time="7.275">
+    <testcase classname="Merger test merge_remote_spreadsheet test" name="should call MergeRemoteSpreadsheet successfully" time="7.275">
+    </testcase>
+  </testsuite>
+  <testsuite name="Protection test protect_spreadsheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:47" time="1.419">
+    <testcase classname="Protection test protect_spreadsheet test" name="should call ProtectSpreadsheet successfully" time="1.416">
+    </testcase>
+  </testsuite>
+  <testsuite name="Protection test unprotect_spreadsheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:49" time="1.393">
+    <testcase classname="Protection test unprotect_spreadsheet test" name="should call UnprotectSpreadsheet successfully" time="1.392">
+    </testcase>
+  </testsuite>
+  <testsuite name="Splitter test split_local_file test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:50" time="7.237">
+    <testcase classname="Splitter test split_local_file test" name="should call SplitSpreadsheet successfully" time="7.236">
+    </testcase>
+  </testsuite>
+  <testsuite name="Splitter test split_local_file_to_remote_folder test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:41:58" time="2.932">
+    <testcase classname="Splitter test split_local_file_to_remote_folder test" name="should call SplitSpreadsheet successfully" time="2.93">
+    </testcase>
+  </testsuite>
+  <testsuite name="Splitter test split_file_in_remote test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:00" time="2.243">
+    <testcase classname="Splitter test split_file_in_remote test" name="should call SplitRemoteSpreadsheet successfully" time="2.242">
+    </testcase>
+  </testsuite>
+  <testsuite name="FileController test download_file test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:03" time="11.136">
+    <testcase classname="FileController test download_file test" name="should call DownloadFile successfully" time="11.134">
+    </testcase>
+  </testsuite>
+  <testsuite name="FileController test upload_file test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:14" time="2.885">
+    <testcase classname="FileController test upload_file test" name="should call UploadFile successfully" time="2.884">
+    </testcase>
+  </testsuite>
+  <testsuite name="FileController test copy_file test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:17" time="0.378">
+    <testcase classname="FileController test copy_file test" name="should call CopyFile successfully" time="0.376">
+    </testcase>
+  </testsuite>
+  <testsuite name="FolderController test get_files_list test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:17" time="2.099">
+    <testcase classname="FolderController test get_files_list test" name="should call GetFilesList successfully" time="2.097">
+    </testcase>
+  </testsuite>
+  <testsuite name="FolderController test create_folder test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:19" time="0.361">
+    <testcase classname="FolderController test create_folder test" name="should call CreateFolder successfully" time="0.36">
+    </testcase>
+  </testsuite>
+  <testsuite name="FolderController test copy_folder test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:20" time="2.747">
+    <testcase classname="FolderController test copy_folder test" name="should call CopyFolder successfully" time="2.747">
+    </testcase>
+  </testsuite>
+  <testsuite name="FolderController test move_folder test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:22" time="6.425">
+    <testcase classname="FolderController test move_folder test" name="should call MoveFolder successfully" time="6.424">
+    </testcase>
+  </testsuite>
+  <testsuite name="FolderController test delete_folder test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:29" time="0.339">
+    <testcase classname="FolderController test delete_folder test" name="should call DeleteFolder successfully" time="0.338">
+    </testcase>
+  </testsuite>
+  <testsuite name="StorageController test storage_exists test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:29" time="1.854">
+    <testcase classname="StorageController test storage_exists test" name="should call StorageExists successfully" time="1.854">
+    </testcase>
+  </testsuite>
+  <testsuite name="StorageController test object_exists test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:31" time="0.391">
+    <testcase classname="StorageController test object_exists test" name="should call ObjectExists successfully" time="0.391">
+    </testcase>
+  </testsuite>
+  <testsuite name="StorageController test get_disc_usage test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:31" time="2.309">
+    <testcase classname="StorageController test get_disc_usage test" name="should call GetDiscUsage successfully" time="2.307">
+    </testcase>
+  </testsuite>
+  <testsuite name="StorageController test get_file_versions test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:34" time="0.401">
+    <testcase classname="StorageController test get_file_versions test" name="should call GetFileVersions successfully" time="0.399">
+    </testcase>
+  </testsuite>
+  <testsuite name="Management test create_spreadsheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:34" time="0.588">
+    <testcase classname="Management test create_spreadsheet test" name="should call CreateSpreadsheet successfully" time="0.586">
+    </testcase>
+  </testsuite>
+  <testsuite name="Management test create_spreadsheet_with_template test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:35" time="10.705">
+    <testcase classname="Management test create_spreadsheet_with_template test" name="should call CreateSpreadsheet successfully" time="10.705">
+    </testcase>
+  </testsuite>
+  <testsuite name="Management test add_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:45" time="2.523">
+    <testcase classname="Management test add_worksheet test" name="should call AddWorksheetToSpreadsheet successfully" time="2.523">
+    </testcase>
+  </testsuite>
+  <testsuite name="Management test delete_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:48" time="1.038">
+    <testcase classname="Management test delete_worksheet test" name="should call DeleteWorksheetFromSpreadsheet successfully" time="1.037">
+    </testcase>
+  </testsuite>
+  <testsuite name="Management test rename_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:49" time="1.39">
+    <testcase classname="Management test rename_worksheet test" name="should call RenameWorksheetInSpreadsheet successfully" time="1.389">
+    </testcase>
+  </testsuite>
+  <testsuite name="Management test move_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:50" time="1.631">
+    <testcase classname="Management test move_worksheet test" name="should call MoveWorksheetInSpreadsheet successfully" time="1.63">
+    </testcase>
+  </testsuite>
+  <testsuite name="Management test compress_spreadsheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:52" time="4.067">
+    <testcase classname="Management test compress_spreadsheet test" name="should call CompressSpreadsheet successfully" time="4.066">
+    </testcase>
+  </testsuite>
+  <testsuite name="Replacer test replace_text_in_local_file test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:56" time="2.099">
+    <testcase classname="Replacer test replace_text_in_local_file test" name="should call ReplaceSpreadsheetContent successfully" time="2.096">
+    </testcase>
+  </testsuite>
+  <testsuite name="Replacer test replace_text_from_worksheet_in_local_file test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:42:58" time="1.5">
+    <testcase classname="Replacer test replace_text_from_worksheet_in_local_file test" name="should call ReplaceSpreadsheetContent successfully" time="1.498">
+    </testcase>
+  </testsuite>
+  <testsuite name="Replacer test replace_text_in_remote_range test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:00" time="0.737">
+    <testcase classname="Replacer test replace_text_in_remote_range test" name="should call ReplaceContentInRemoteRange successfully" time="0.736">
+    </testcase>
+  </testsuite>
+  <testsuite name="Searcher test search_text_in_local_file test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:00" time="0.851">
+    <testcase classname="Searcher test search_text_in_local_file test" name="should call SearchSpreadsheetContent successfully" time="0.85">
+    </testcase>
+  </testsuite>
+  <testsuite name="Searcher test search_text_from_worksheet_in_local_file test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:01" time="0.528">
+    <testcase classname="Searcher test search_text_from_worksheet_in_local_file test" name="should call SearchSpreadsheetContent successfully" time="0.527">
+    </testcase>
+  </testsuite>
+  <testsuite name="Searcher test search_text_in_remote_spreadsheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:02" time="0.397">
+    <testcase classname="Searcher test search_text_in_remote_spreadsheet test" name="should call SearchContentInRemoteSpreadsheet successfully" time="0.396">
+    </testcase>
+  </testsuite>
+  <testsuite name="Searcher test search_text_in_remote_range test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:02" time="0.421">
+    <testcase classname="Searcher test search_text_in_remote_range test" name="should call SearchContentInRemoteRange successfully" time="0.421">
+    </testcase>
+  </testsuite>
+  <testsuite name="Searcher test search_spreadsheet_broken_links test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:03" time="0.563">
+    <testcase classname="Searcher test search_spreadsheet_broken_links test" name="should call SearchSpreadsheetBrokenLinks successfully" time="0.563">
+    </testcase>
+  </testsuite>
+  <testsuite name="Searcher test search_broken_links_in_remote_spreadsheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:03" time="0.886">
+    <testcase classname="Searcher test search_broken_links_in_remote_spreadsheet test" name="should call SearchBrokenLinksInRemoteSpreadsheet successfully" time="0.884">
+    </testcase>
+  </testsuite>
+  <testsuite name="Searcher test search_broken_links_in_remote_worksheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:04" time="0.469">
+    <testcase classname="Searcher test search_broken_links_in_remote_worksheet test" name="should call SearchBrokenLinksInRemoteWorksheet successfully" time="0.467">
+    </testcase>
+  </testsuite>
+  <testsuite name="Searcher test search_broken_links_in_remote_range test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:04" time="0.355">
+    <testcase classname="Searcher test search_broken_links_in_remote_range test" name="should call SearchBrokenLinksInRemoteRange successfully" time="0.353">
+    </testcase>
+  </testsuite>
+  <testsuite name="AddText test add_text test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:05" time="2.18">
+    <testcase classname="AddText test add_text test" name="should call AddText successfully" time="2.178">
+    </testcase>
+  </testsuite>
+  <testsuite name="AddText test add_text_skip_empty_cells test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:07" time="1.034">
+    <testcase classname="AddText test add_text_skip_empty_cells test" name="should call AddText successfully" time="1.032">
+    </testcase>
+  </testsuite>
+  <testsuite name="AddText test add_text_in_range test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:08" time="0.805">
+    <testcase classname="AddText test add_text_in_range test" name="should call AddText successfully" time="0.803">
+    </testcase>
+  </testsuite>
+  <testsuite name="AddText test add_text_before_text test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:09" time="0.803">
+    <testcase classname="AddText test add_text_before_text test" name="should call AddText successfully" time="0.801">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConvertText test convert_text test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:10" time="1.09">
+    <testcase classname="ConvertText test convert_text test" name="should call ConvertText successfully" time="1.088">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConvertText test convert_text_with_convert_characters test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:11" time="0.789">
+    <testcase classname="ConvertText test convert_text_with_convert_characters test" name="should call ConvertText successfully" time="0.788">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConvertText test convert_text_with_convert_write_space test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:12" time="0.801">
+    <testcase classname="ConvertText test convert_text_with_convert_write_space test" name="should call ConvertText successfully" time="0.799">
+    </testcase>
+  </testsuite>
+  <testsuite name="ExtractText test extract_text test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:43:12" time="0.842">
+    <testcase classname="ExtractText test extract_text test" name="should call ExtractText successfully" time="0.841">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ExtractText test extract_text_with_extract_last_character test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:43:13" time="0.527">
+    <testcase classname="ExtractText test extract_text_with_extract_last_character test" name="should call ExtractText successfully" time="0.526">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ExtractText test extract_text_with_extract_text_after test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:43:14" time="0.544">
+    <testcase classname="ExtractText test extract_text_with_extract_text_after test" name="should call ExtractText successfully" time="0.542">
+      <failure message="the object {
+  &quot;code&quot;: 400
+  &quot;message&quot;: [undefined]
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="RemoveCharacters test remove_characters_with_first_n_characters test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:14" time="1.089">
+    <testcase classname="RemoveCharacters test remove_characters_with_first_n_characters test" name="should call RemoveCharacters successfully" time="1.089">
+    </testcase>
+  </testsuite>
+  <testsuite name="RemoveCharacters test remove_characters_with_all_characters_before_text test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:15" time="1.765">
+    <testcase classname="RemoveCharacters test remove_characters_with_all_characters_before_text test" name="should call RemoveCharacters successfully" time="1.763">
+    </testcase>
+  </testsuite>
+  <testsuite name="RemoveCharacters test remove_characters test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:17" time="1.312">
+    <testcase classname="RemoveCharacters test remove_characters test" name="should call RemoveCharacters successfully" time="1.312">
+    </testcase>
+  </testsuite>
+  <testsuite name="SplitText test split_text test" tests="1" errors="0" failures="1" skipped="0" timestamp="2026-01-22T07:43:18" time="0.002">
+    <testcase classname="SplitText test split_text test" name="should call SplitText successfully" time="0.001">
+      <failure message="the object {
+  &quot;0&quot;: &quot;R&quot;
+  &quot;1&quot;: &quot;e&quot;
+  &quot;2&quot;: &quot;q&quot;
+  &quot;3&quot;: &quot;u&quot;
+  &quot;4&quot;: &quot;i&quot;
+  &quot;5&quot;: &quot;r&quot;
+  &quot;6&quot;: &quot;e&quot;
+  &quot;7&quot;: &quot;d&quot;
+  &quot;8&quot;: &quot; &quot;
+  &quot;9&quot;: &quot;p&quot;
+  &quot;10&quot;: &quot;a&quot;
+  &quot;11&quot;: &quot;r&quot;
+  &quot;12&quot;: &quot;a&quot;
+  &quot;13&quot;: &quot;m&quot;
+  &quot;14&quot;: &quot;e&quot;
+  &quot;15&quot;: &quot;t&quot;
+  &quot;16&quot;: &quot;e&quot;
+  &quot;17&quot;: &quot;r&quot;
+  &quot;18&quot;: &quot; &quot;
+  &quot;19&quot;: &quot;\&quot;&quot;
+  &quot;20&quot;: &quot;d&quot;
+  &quot;21&quot;: &quot;e&quot;
+  &quot;22&quot;: &quot;l&quot;
+  &quot;23&quot;: &quot;i&quot;
+  &quot;24&quot;: &quot;m&quot;
+  &quot;25&quot;: &quot;i&quot;
+  &quot;26&quot;: &quot;t&quot;
+  &quot;27&quot;: &quot;e&quot;
+  &quot;28&quot;: &quot;r&quot;
+  &quot;29&quot;: &quot;s&quot;
+  &quot;30&quot;: &quot;\&quot;&quot;
+  &quot;31&quot;: &quot; &quot;
+  &quot;32&quot;: &quot;w&quot;
+  &quot;33&quot;: &quot;a&quot;
+  &quot;34&quot;: &quot;s&quot;
+  &quot;35&quot;: &quot; &quot;
+  &quot;36&quot;: &quot;n&quot;
+  &quot;37&quot;: &quot;u&quot;
+  &quot;38&quot;: &quot;l&quot;
+  &quot;39&quot;: &quot;l&quot;
+  &quot;40&quot;: &quot; &quot;
+  &quot;41&quot;: &quot;o&quot;
+  &quot;42&quot;: &quot;r&quot;
+  &quot;43&quot;: &quot; &quot;
+  &quot;44&quot;: &quot;u&quot;
+  &quot;45&quot;: &quot;n&quot;
+  &quot;46&quot;: &quot;d&quot;
+  &quot;47&quot;: &quot;e&quot;
+  &quot;48&quot;: &quot;f&quot;
+  &quot;49&quot;: &quot;i&quot;
+  &quot;50&quot;: &quot;n&quot;
+  &quot;51&quot;: &quot;e&quot;
+  &quot;52&quot;: &quot;d&quot;
+  &quot;53&quot;: &quot; &quot;
+  &quot;54&quot;: &quot;w&quot;
+  &quot;55&quot;: &quot;h&quot;
+  &quot;56&quot;: &quot;e&quot;
+  &quot;57&quot;: &quot;n&quot;
+  &quot;58&quot;: &quot; &quot;
+  &quot;59&quot;: &quot;c&quot;
+  &quot;60&quot;: &quot;a&quot;
+  &quot;61&quot;: &quot;l&quot;
+  &quot;62&quot;: &quot;l&quot;
+  &quot;63&quot;: &quot;i&quot;
+  &quot;64&quot;: &quot;n&quot;
+  &quot;65&quot;: &quot;g&quot;
+  &quot;66&quot;: &quot; &quot;
+  &quot;67&quot;: &quot;S&quot;
+  &quot;68&quot;: &quot;p&quot;
+  &quot;69&quot;: &quot;l&quot;
+  &quot;70&quot;: &quot;i&quot;
+  &quot;71&quot;: &quot;t&quot;
+  &quot;72&quot;: &quot;T&quot;
+  &quot;73&quot;: &quot;e&quot;
+  &quot;74&quot;: &quot;x&quot;
+  &quot;75&quot;: &quot;t&quot;
+  &quot;76&quot;: &quot;.&quot;
+} was thrown, throw an Error :)"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="UpdateWordCase test update_word_case test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:18" time="1.352">
+    <testcase classname="UpdateWordCase test update_word_case test" name="should call UpdateWordCase successfully" time="1.351">
+    </testcase>
+  </testsuite>
+  <testsuite name="UpdateWordCase test update_word_case_in_range test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:20" time="0.837">
+    <testcase classname="UpdateWordCase test update_word_case_in_range test" name="should call UpdateWordCase successfully" time="0.836">
+    </testcase>
+  </testsuite>
+  <testsuite name="UpdateWordCase test update_word_case_in_spreadsheet test" tests="1" errors="0" failures="0" skipped="0" timestamp="2026-01-22T07:43:21" time="1.764">
+    <testcase classname="UpdateWordCase test update_word_case_in_spreadsheet test" name="should call UpdateWordCase successfully" time="1.761">
+    </testcase>
+  </testsuite>
+</testsuites>

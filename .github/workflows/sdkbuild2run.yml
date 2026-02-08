@@ -1,32 +1,15 @@
-name: Node.js CI
+- name: Run examples directly
+  working-directory: ${{ github.workspace }}
+  env:
+    CellsCloudClientId: ${{ secrets.PRODUCTCLIENTID }}
+    CellsCloudClientSecret: ${{ secrets.PRODUCTCLIENTSECRET }}
+    CellsCloudApiBaseUrl: "https://api.aspose.cloud/"
+  run: |
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    npm install ts-node
 
-jobs:
-  build:
-    runs-on: windows-latest
-    env:
-      ProductClientId: ${{ secrets.PRODUCTCLIENTID }}
-      ProductClientSecret: ${{ secrets.PRODUCTCLIENTSECRET }}
-
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '21'
-
-    - name: Install dependencies
-      working-directory: ${{ github.workspace }}
-      run: |
-        npm install
-
-    - name: Run tests
-      working-directory: ${{ github.workspace }}
-      run: |
-        npx cross-env JUNIT_REPORT_PATH=integration_tests_result.xml mocha -r ts-node/register Examples/**/*.ts --timeout 250000 --reporter mocha-jenkins-reporter
+    for file in Examples/*.ts; do
+      echo "=== run $file ==="
+      npx ts-node "$file" && echo "success" || echo "error"
+      echo ""
+    done

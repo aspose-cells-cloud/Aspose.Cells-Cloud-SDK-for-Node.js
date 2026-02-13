@@ -53,7 +53,7 @@ export class CellsApi {
     }
 
     /// <summary>
-    /// Translates the entire spreadsheet to the specified target language.
+    /// AI task decomposition: Convert user objectives to sequential action plans with formatted file export.
     /// </summary>
     /// <param name="request">Request. <see cref="DecomposeUserTaskRequest" /></param>
     public async decomposeUserTask(requestObj:model.DecomposeUserTaskRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -71,11 +71,11 @@ export class CellsApi {
     /// <summary>
     /// Translates the entire spreadsheet to the specified target language.
     /// </summary>
-    /// <param name="request">Request. <see cref="TranslationSpreadsheetRequest" /></param>
-    public async translationSpreadsheet(requestObj:model.TranslationSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
+    /// <param name="request">Request. <see cref="TranslateSpreadsheetRequest" /></param>
+    public async translateSpreadsheet(requestObj:model.TranslateSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
     {
         if (requestObj === null || requestObj === undefined) {
-            throw new Error('Required parameter "requestObj" was null or undefined when calling translationSpreadsheet.');
+            throw new Error('Required parameter "requestObj" was null or undefined when calling translateSpreadsheet.');
         }
 
         const requestOptions = await requestObj.createRequestOptions(this.configuration);
@@ -85,9 +85,10 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Translates text file content to the specified target language.
     /// </summary>
     /// <param name="request">Request. <see cref="TranslateTextFileRequest" /></param>
-    public async translateTextFile(requestObj:model.TranslateTextFileRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
+    public async translateTextFile(requestObj:model.TranslateTextFileRequest ): Promise<{response: http.ClientResponse, body: any}>
     {
         if (requestObj === null || requestObj === undefined) {
             throw new Error('Required parameter "requestObj" was null or undefined when calling translateTextFile.');
@@ -95,7 +96,7 @@ export class CellsApi {
 
         const requestOptions = await requestObj.createRequestOptions(this.configuration);
         const response = await invokeApiMethod(requestOptions, this.configuration);
-        const result =  ObjectSerializer.deserialize(response.body, "Buffer");
+        const result =  ObjectSerializer.deserialize(response.body, "any");
         return Promise.resolve({body: result, response});
     }
 
@@ -292,6 +293,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Converts a spreadsheet on a local drive to the JSON file.
     /// </summary>
     /// <param name="request">Request. <see cref="ConvertSpreadsheetToJsonRequest" /></param>
     public async convertSpreadsheetToJson(requestObj:model.ConvertSpreadsheetToJsonRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -355,6 +357,38 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Converts a worksheet of spreadsheet on a local drive to the JSON file.
+    /// </summary>
+    /// <param name="request">Request. <see cref="ConvertWorksheetToJsonRequest" /></param>
+    public async convertWorksheetToJson(requestObj:model.ConvertWorksheetToJsonRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling convertWorksheetToJson.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "Buffer");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// Converts a worksheet of spreadsheet on a local drive to the CSV file.
+    /// </summary>
+    /// <param name="request">Request. <see cref="ConvertWorksheetToCsvRequest" /></param>
+    public async convertWorksheetToCsv(requestObj:model.ConvertWorksheetToCsvRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling convertWorksheetToCsv.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "Buffer");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
     /// Converts a worksheet of spreadsheet on a local drive to the html file.
     /// </summary>
     /// <param name="request">Request. <see cref="ConvertWorksheetToHtmlRequest" /></param>
@@ -371,6 +405,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Converts a worksheet of spreadsheet on a local drive to the HTML table file.
     /// </summary>
     /// <param name="request">Request. <see cref="ConvertWorksheetToHtmlTableRequest" /></param>
     public async convertWorksheetToHtmlTable(requestObj:model.ConvertWorksheetToHtmlTableRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -658,7 +693,7 @@ export class CellsApi {
     }
 
     /// <summary>
-    /// Split an Excel worksheet into multiple sheets by column value.
+    /// Split an Excel worksheet tale into multiple sheets by column value.
     /// </summary>
     /// <param name="request">Request. <see cref="SplitTableRequest" /></param>
     public async splitTable(requestObj:model.SplitTableRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -706,6 +741,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Import JSON data file into the local spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="ImportJSONDataIntoSpreadsheetRequest" /></param>
     public async importJSONDataIntoSpreadsheet(requestObj:model.ImportJSONDataIntoSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -721,6 +757,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Import XML data file into the local spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="ImportXMLDataIntoSpreadsheetRequest" /></param>
     public async importXMLDataIntoSpreadsheet(requestObj:model.ImportXMLDataIntoSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -736,6 +773,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Import CSV data file into the local spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="ImportCSVDataIntoSpreadsheetRequest" /></param>
     public async importCSVDataIntoSpreadsheet(requestObj:model.ImportCSVDataIntoSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -779,6 +817,22 @@ export class CellsApi {
         const requestOptions = await requestObj.createRequestOptions(this.configuration);
         const response = await invokeApiMethod(requestOptions, this.configuration);
         const result =  ObjectSerializer.deserialize(response.body, "Buffer");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// Fetches a complete list of worksheets from the currently active local spreadsheet.
+    /// </summary>
+    /// <param name="request">Request. <see cref="GetWorksheetsWithLocalSpreadsheetRequest" /></param>
+    public async getWorksheetsWithLocalSpreadsheet(requestObj:model.GetWorksheetsWithLocalSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: string}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling getWorksheetsWithLocalSpreadsheet.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "string");
         return Promise.resolve({body: result, response});
     }
 
@@ -863,6 +917,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// The Web API endpoint allows users to repair a spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="RepairSpreadsheetRequest" /></param>
     public async repairSpreadsheet(requestObj:model.RepairSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -874,6 +929,38 @@ export class CellsApi {
         const requestOptions = await requestObj.createRequestOptions(this.configuration);
         const response = await invokeApiMethod(requestOptions, this.configuration);
         const result =  ObjectSerializer.deserialize(response.body, "Buffer");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// Get all merged cell area form a remote spreadsheet worksheet.
+    /// </summary>
+    /// <param name="request">Request. <see cref="GetMergedCellsInRemotedWorksheetRequest" /></param>
+    public async getMergedCellsInRemotedWorksheet(requestObj:model.GetMergedCellsInRemotedWorksheetRequest ): Promise<{response: http.ClientResponse, body: Array<model.CellArea>}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling getMergedCellsInRemotedWorksheet.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "Array<CellArea>");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// Get all merged cell area form a local spreadsheet worksheet.
+    /// </summary>
+    /// <param name="request">Request. <see cref="GetMergedCellsInWorksheetRequest" /></param>
+    public async getMergedCellsInWorksheet(requestObj:model.GetMergedCellsInWorksheetRequest ): Promise<{response: http.ClientResponse, body: Array<model.CellArea>}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling getMergedCellsInWorksheet.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "Array<CellArea>");
         return Promise.resolve({body: result, response});
     }
 
@@ -921,6 +1008,38 @@ export class CellsApi {
         const requestOptions = await requestObj.createRequestOptions(this.configuration);
         const response = await invokeApiMethod(requestOptions, this.configuration);
         const result =  ObjectSerializer.deserialize(response.body, "Buffer");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// Get all text items in the remote spreadsheet.
+    /// </summary>
+    /// <param name="request">Request. <see cref="SearchAllTextItemsInRemoteSpreadsheetRequest" /></param>
+    public async searchAllTextItemsInRemoteSpreadsheet(requestObj:model.SearchAllTextItemsInRemoteSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: model.SearchResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling searchAllTextItemsInRemoteSpreadsheet.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "SearchResponse");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// Get all text items in the remote spreadsheet.
+    /// </summary>
+    /// <param name="request">Request. <see cref="SearchSpreadsheetAllTextItemsRequest" /></param>
+    public async searchSpreadsheetAllTextItems(requestObj:model.SearchSpreadsheetAllTextItemsRequest ): Promise<{response: http.ClientResponse, body: model.SearchResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling searchSpreadsheetAllTextItems.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "SearchResponse");
         return Promise.resolve({body: result, response});
     }
 
@@ -1340,6 +1459,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Removes duplicate values in the worksheet/range/table.
     /// </summary>
     /// <param name="request">Request. <see cref="RemoveDuplicatesRequest" /></param>
     public async removeDuplicates(requestObj:model.RemoveDuplicatesRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -1371,6 +1491,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Transposes a specified data range (rows become columns, columns become rows).
     /// </summary>
     /// <param name="request">Request. <see cref="FlipDataRequest" /></param>
     public async flipData(requestObj:model.FlipDataRequest ): Promise<{response: http.ClientResponse, body: Buffer}>

@@ -1,6 +1,6 @@
 {
   "name": "asposecellscloud",
-  "version": "26.1.0",
+  "version": "26.2.0",
   "description": "Aspose.Cells Cloud is a REST API for creating and editing Excel files. Most popular features: Excel to PDF, Convert to Image, Merge workbooks, Split worksheets, Data processing with formulas and pivot tables. It can also be used to convert spreadsheets between various formats (XLSX, CSV, JSON, ODS, HTML) without any local office software.",
   "keywords": [
     "excel",

@@ -25475,6 +25475,8 @@ export class SplitTableRequest  {
     public splitColumnName: string;
     /// Whether to keep the data in the split column.  
     public saveSplitColumn: boolean;
+      
+    public splitRowNumber: number;
     /// Export destination control: true - Creates new workbook files containing the split data; false - Adds a new worksheet to the current workbook.  
     public toNewWorkbook: boolean;
     /// true - Exports table data as **multiple separate files** (returned as ZIP archive);false - Stores all data in a **single file** with multiple sheets. Default: false.  
@@ -25521,6 +25523,11 @@ export class SplitTableRequest  {
         if (this.saveSplitColumn === null || this.saveSplitColumn === undefined) {
             throw new Error('Required parameter "saveSplitColumn" was null or undefined when calling SplitTable.');
         }
+         
+        // verify required parameter 'splitRowNumber' is not null or undefined
+        if (this.splitRowNumber === null || this.splitRowNumber === undefined) {
+            throw new Error('Required parameter "splitRowNumber" was null or undefined when calling SplitTable.');
+        }
         /// Export destination control: true - Creates new workbook files containing the split data; false - Adds a new worksheet to the current workbook. 
         // verify required parameter 'toNewWorkbook' is not null or undefined
         if (this.toNewWorkbook === null || this.toNewWorkbook === undefined) {
@@ -25535,6 +25542,7 @@ export class SplitTableRequest  {
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "tableName", this.tableName);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "splitColumnName", this.splitColumnName);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "saveSplitColumn", this.saveSplitColumn);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "splitRowNumber", this.splitRowNumber);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "toNewWorkbook", this.toNewWorkbook);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "toMultipleFiles", this.toMultipleFiles);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "outPath", this.outPath);
@@ -26743,6 +26751,129 @@ export class GetMergedCellsInWorksheetRequest  {
         };
 
         (requestOptions as any).formData = formParams;        
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+   
+export class AcceptAllRevisionsRequest  {
+    /// Upload spreadsheet file.  
+    public spreadsheet: any;
+    /// (Optional) The folder path where the workbook is stored. The default is null.  
+    public outPath: string;
+    /// Output file Storage Name.  
+    public outStorageName: string;
+    /// Use Custom fonts.  
+    public fontsLocation: string;
+    /// The spreadsheet region setting.  
+    public region: string;
+    /// The password for opening spreadsheet file.  
+    public password: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< AcceptAllRevisionsRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/spreadsheet/accept-all-revisions";
+        const queryParameters: any = {};
+        const formParams: any = {};
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "outPath", this.outPath);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "outStorageName", this.outStorageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "fontsLocation", this.fontsLocation);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+        if (this.spreadsheet !== undefined) {
+            if (typeof this.spreadsheet === 'string') {
+                if (fs.existsSync(this.spreadsheet)) {
+                    const fileName = path.basename( this.spreadsheet)
+                    formParams[fileName] = fs.createReadStream(this.spreadsheet)
+                }
+            }
+            else {
+                for (var key in this.spreadsheet){
+                    formParams[key] = this.spreadsheet[key];
+                }
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
+            method: "PUT",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
+        (requestOptions as any).formData = formParams;        
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+   
+export class AcceptAllRevisionsInRemoteSpreadsheetRequest  {
+      
+    public name: string;
+      
+    public folder: string;
+    /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
+    public storageName: string;
+    /// (Optional) The folder path where the workbook is stored. The default is null.  
+    public outPath: string;
+    /// Output file Storage Name.  
+    public outStorageName: string;
+    /// Use Custom fonts.  
+    public fontsLocation: string;
+    /// The spreadsheet region setting.  
+    public region: string;
+    /// The password for opening spreadsheet file.  
+    public password: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< AcceptAllRevisionsInRemoteSpreadsheetRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/{name}/accept-all-revisions".replace("{" + "name" + "}", String(this.name));
+        const queryParameters: any = {};
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "folder", this.folder);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "storageName", this.storageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "outPath", this.outPath);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "outStorageName", this.outStorageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "fontsLocation", this.fontsLocation);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
+            method: "PUT",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
         return Promise.resolve(requestOptions);
 
     }

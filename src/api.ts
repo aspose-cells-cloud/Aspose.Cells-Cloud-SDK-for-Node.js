@@ -965,6 +965,36 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// </summary>
+    /// <param name="request">Request. <see cref="AcceptAllRevisionsRequest" /></param>
+    public async acceptAllRevisions(requestObj:model.AcceptAllRevisionsRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling acceptAllRevisions.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "Buffer");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// </summary>
+    /// <param name="request">Request. <see cref="AcceptAllRevisionsInRemoteSpreadsheetRequest" /></param>
+    public async acceptAllRevisionsInRemoteSpreadsheet(requestObj:model.AcceptAllRevisionsInRemoteSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling acceptAllRevisionsInRemoteSpreadsheet.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "Buffer");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
     /// Applies dual-layer password protection to Excel spreadsheets, supporting both open and modify passwords with encryption.
     /// </summary>
     /// <param name="request">Request. <see cref="ProtectSpreadsheetRequest" /></param>

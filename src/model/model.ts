@@ -22731,6 +22731,12 @@ export class TranslateSpreadsheetRequest  {
     public spreadsheet!: any;
     /// The target language code for translation (e.g., "es", "fr", "de").  
     public targetLanguage!: string;
+    /// Optional. Full Chat Completions endpoint URL.  
+    public customEndpoint!: string;
+    /// Optional. API key for the custom AI service.  
+    public customApiKey!: string;
+    /// Optional. Model name to use.  
+    public customModel!: string;
     /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
     public region!: string;
     /// The password for opening spreadsheet file.  
@@ -22753,6 +22759,9 @@ export class TranslateSpreadsheetRequest  {
             throw new Error('Required parameter "targetLanguage" was null or undefined when calling TranslateSpreadsheet.');
         }
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "targetLanguage", this.targetLanguage);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "customEndpoint", this.customEndpoint);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "customApiKey", this.customApiKey);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "customModel", this.customModel);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
         if(this.extendQueryParameterMap !== undefined){
@@ -22796,6 +22805,12 @@ export class TranslateTextFileRequest  {
     public spreadsheet!: any;
     /// The target language code for translation (e.g., "es", "fr", "de").  
     public targetLanguage!: string;
+      
+    public customEndpoint!: string;
+      
+    public customApiKey!: string;
+      
+    public customModel!: string;
     /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
     public region!: string;
     /// The password for opening spreadsheet file.  
@@ -22818,6 +22833,9 @@ export class TranslateTextFileRequest  {
             throw new Error('Required parameter "targetLanguage" was null or undefined when calling TranslateTextFile.');
         }
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "targetLanguage", this.targetLanguage);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "customEndpoint", this.customEndpoint);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "customApiKey", this.customApiKey);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "customModel", this.customModel);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
         if(this.extendQueryParameterMap !== undefined){
@@ -27670,6 +27688,10 @@ export class SpreadsheetDigitalsignatureRequest  {
 }
    
 export class SmartMarkerTemplateRequest  {
+    /// Upload smartmarker template json data file.  
+    public datafile!: any;
+    /// Upload smartmarker template file.  
+    public templatefile!: any;
     /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
     public region!: string;
     /// The password for opening spreadsheet file.  
@@ -27685,11 +27707,38 @@ export class SmartMarkerTemplateRequest  {
 
         let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/report/smart/template";
         const queryParameters: any = {};
+        const formParams: any = {};
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
         if(this.extendQueryParameterMap !== undefined){
             for (var key in this.extendQueryParameterMap){
                 localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+        if (this.datafile !== undefined) {
+            if (typeof this.datafile === 'string') {
+                if (fs.existsSync(this.datafile)) {
+                    const fileName = path.basename( this.datafile)
+                    formParams[fileName] = fs.createReadStream(this.datafile)
+                }
+            }
+            else {
+                for (var key in this.datafile){
+                    formParams[key] = this.datafile[key];
+                }
+            }
+        }
+        if (this.templatefile !== undefined) {
+            if (typeof this.templatefile === 'string') {
+                if (fs.existsSync(this.templatefile)) {
+                    const fileName = path.basename( this.templatefile)
+                    formParams[fileName] = fs.createReadStream(this.templatefile)
+                }
+            }
+            else {
+                for (var key in this.templatefile){
+                    formParams[key] = this.templatefile[key];
+                }
             }
         }
 
@@ -27703,6 +27752,7 @@ export class SmartMarkerTemplateRequest  {
             json: true,
         };
 
+        (requestOptions as any).formData = formParams;        
         return Promise.resolve(requestOptions);
 
     }

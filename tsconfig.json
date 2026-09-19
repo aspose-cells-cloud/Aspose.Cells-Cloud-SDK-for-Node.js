@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "skipLibCheck": true,
+        "target": "ES6",
+        "lib": ["es5", "es6", "scripthost"],
+        "outDir": "dist",
+        "rootDir": ".", 
+        "strict": false, 
+        "esModuleInterop": true,
+        "declaration": true,
+        "removeComments": false,
+        "sourceMap": false
+    },
+    "include": ["src/**/*"]
+}

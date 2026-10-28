@@ -165,6 +165,24 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Deprecated: Use String) instead.
+    /// This endpoint exists only for backward compatibility with clients that used the misspelled
+    /// route calculate/aggergate/color. It will be removed in a future major version.
+    /// </summary>
+    /// <param name="request">Request. <see cref="AggregateCellsByColor_DeprecatedRequest" /></param>
+    public async aggregateCellsByColor_Deprecated(requestObj:model.AggregateCellsByColor_DeprecatedRequest ): Promise<{response: http.ClientResponse, body: model.AggregateResultByColorResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling aggregateCellsByColor_Deprecated.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "AggregateResultByColorResponse");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
     /// </summary>
     /// <param name="request">Request. <see cref="MathCalculateRequest" /></param>
     public async mathCalculate(requestObj:model.MathCalculateRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -180,6 +198,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Calculates a formula expression and returns the result.
     /// </summary>
     /// <param name="request">Request. <see cref="CalculationFormulaRequest" /></param>
     public async calculationFormula(requestObj:model.CalculationFormulaRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -1012,7 +1031,7 @@ export class CellsApi {
     }
 
     /// <summary>
-    /// Get all merged cell area form a local spreadsheet worksheet.
+    /// Get all merged cell areas from a local spreadsheet worksheet.
     /// </summary>
     /// <param name="request">Request. <see cref="GetMergedCellsInWorksheetRequest" /></param>
     public async getMergedCellsInWorksheet(requestObj:model.GetMergedCellsInWorksheetRequest ): Promise<{response: http.ClientResponse, body: Array<model.CellArea>}>
@@ -1028,6 +1047,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Accepts all tracked changes (revisions) in the local spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="AcceptAllRevisionsRequest" /></param>
     public async acceptAllRevisions(requestObj:model.AcceptAllRevisionsRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -1043,6 +1063,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Accepts all tracked changes (revisions) in a remote spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="AcceptAllRevisionsInRemoteSpreadsheetRequest" /></param>
     public async acceptAllRevisionsInRemoteSpreadsheet(requestObj:model.AcceptAllRevisionsInRemoteSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -1058,7 +1079,7 @@ export class CellsApi {
     }
 
     /// <summary>
-    /// Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.
+    /// Extracts the structural information of a local spreadsheet as a JSON object.
     /// </summary>
     /// <param name="request">Request. <see cref="GetSpreadsheetStructureRequest" /></param>
     public async getSpreadsheetStructure(requestObj:model.GetSpreadsheetStructureRequest ): Promise<{response: http.ClientResponse, body: string}>
@@ -1074,7 +1095,7 @@ export class CellsApi {
     }
 
     /// <summary>
-    /// Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.
+    /// Extracts the structural information of a remote spreadsheet as a JSON object.
     /// </summary>
     /// <param name="request">Request. <see cref="GetStructureInRemoteSpreadsheetRequest" /></param>
     public async getStructureInRemoteSpreadsheet(requestObj:model.GetStructureInRemoteSpreadsheetRequest ): Promise<{response: http.ClientResponse, body: string}>
@@ -1122,6 +1143,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Adds digital signatures to Excel spreadsheets using X.509 certificates (.pfx files) for document authentication and integrity verification.
     /// </summary>
     /// <param name="request">Request. <see cref="SpreadsheetDigitalsignatureRequest" /></param>
     public async spreadsheetDigitalsignature(requestObj:model.SpreadsheetDigitalsignatureRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -1137,6 +1159,7 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Generates reports using Smart Marker template technology with JSON data.
     /// </summary>
     /// <param name="request">Request. <see cref="SmartMarkerTemplateRequest" /></param>
     public async smartMarkerTemplate(requestObj:model.SmartMarkerTemplateRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -1159,6 +1182,24 @@ export class CellsApi {
     {
         if (requestObj === null || requestObj === undefined) {
             throw new Error('Required parameter "requestObj" was null or undefined when calling searchAllTextItemsInRemoteSpreadsheet.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "SearchResponse");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// Deprecated PUT route for String).
+    /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+    /// It will be removed in a future major version.
+    /// </summary>
+    /// <param name="request">Request. <see cref="SearchAllTextItemsInRemoteSpreadsheet_LegacyPutRequest" /></param>
+    public async searchAllTextItemsInRemoteSpreadsheet_LegacyPut(requestObj:model.SearchAllTextItemsInRemoteSpreadsheet_LegacyPutRequest ): Promise<{response: http.ClientResponse, body: model.SearchResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling searchAllTextItemsInRemoteSpreadsheet_LegacyPut.');
         }
 
         const requestOptions = await requestObj.createRequestOptions(this.configuration);
@@ -1216,6 +1257,24 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Deprecated PUT route for String).
+    /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+    /// It will be removed in a future major version.
+    /// </summary>
+    /// <param name="request">Request. <see cref="SearchContentInRemoteSpreadsheet_LegacyPutRequest" /></param>
+    public async searchContentInRemoteSpreadsheet_LegacyPut(requestObj:model.SearchContentInRemoteSpreadsheet_LegacyPutRequest ): Promise<{response: http.ClientResponse, body: model.SearchResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling searchContentInRemoteSpreadsheet_LegacyPut.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "SearchResponse");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
     /// Search text in the worksheet of remoted spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="SearchContentInRemoteWorksheetRequest" /></param>
@@ -1232,6 +1291,24 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Deprecated PUT route for String).
+    /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+    /// It will be removed in a future major version.
+    /// </summary>
+    /// <param name="request">Request. <see cref="SearchContentInRemoteWorksheet_LegacyPutRequest" /></param>
+    public async searchContentInRemoteWorksheet_LegacyPut(requestObj:model.SearchContentInRemoteWorksheet_LegacyPutRequest ): Promise<{response: http.ClientResponse, body: model.SearchResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling searchContentInRemoteWorksheet_LegacyPut.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "SearchResponse");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
     /// Search text in the range of remoted spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="SearchContentInRemoteRangeRequest" /></param>
@@ -1239,6 +1316,24 @@ export class CellsApi {
     {
         if (requestObj === null || requestObj === undefined) {
             throw new Error('Required parameter "requestObj" was null or undefined when calling searchContentInRemoteRange.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "SearchResponse");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// Deprecated PUT route for String).
+    /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+    /// It will be removed in a future major version.
+    /// </summary>
+    /// <param name="request">Request. <see cref="SearchContentInRemoteRange_LegacyPutRequest" /></param>
+    public async searchContentInRemoteRange_LegacyPut(requestObj:model.SearchContentInRemoteRange_LegacyPutRequest ): Promise<{response: http.ClientResponse, body: model.SearchResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling searchContentInRemoteRange_LegacyPut.');
         }
 
         const requestOptions = await requestObj.createRequestOptions(this.configuration);
@@ -1344,6 +1439,24 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Deprecated PUT route for String).
+    /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+    /// It will be removed in a future major version.
+    /// </summary>
+    /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteSpreadsheet_LegacyPutRequest" /></param>
+    public async searchBrokenLinksInRemoteSpreadsheet_LegacyPut(requestObj:model.SearchBrokenLinksInRemoteSpreadsheet_LegacyPutRequest ): Promise<{response: http.ClientResponse, body: model.BrokenLinksResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling searchBrokenLinksInRemoteSpreadsheet_LegacyPut.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "BrokenLinksResponse");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
     /// Search broken links in the worksheet of remoted spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteWorksheetRequest" /></param>
@@ -1360,6 +1473,24 @@ export class CellsApi {
     }
 
     /// <summary>
+    /// Deprecated PUT route for String).
+    /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+    /// It will be removed in a future major version.
+    /// </summary>
+    /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteWorksheet_LegacyPutRequest" /></param>
+    public async searchBrokenLinksInRemoteWorksheet_LegacyPut(requestObj:model.SearchBrokenLinksInRemoteWorksheet_LegacyPutRequest ): Promise<{response: http.ClientResponse, body: model.BrokenLinksResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling searchBrokenLinksInRemoteWorksheet_LegacyPut.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "BrokenLinksResponse");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
     /// Search broken links in the range of remoted spreadsheet.
     /// </summary>
     /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteRangeRequest" /></param>
@@ -1367,6 +1498,24 @@ export class CellsApi {
     {
         if (requestObj === null || requestObj === undefined) {
             throw new Error('Required parameter "requestObj" was null or undefined when calling searchBrokenLinksInRemoteRange.');
+        }
+
+        const requestOptions = await requestObj.createRequestOptions(this.configuration);
+        const response = await invokeApiMethod(requestOptions, this.configuration);
+        const result =  ObjectSerializer.deserialize(response.body, "BrokenLinksResponse");
+        return Promise.resolve({body: result, response});
+    }
+
+    /// <summary>
+    /// Deprecated PUT route for String).
+    /// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+    /// It will be removed in a future major version.
+    /// </summary>
+    /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteRange_LegacyPutRequest" /></param>
+    public async searchBrokenLinksInRemoteRange_LegacyPut(requestObj:model.SearchBrokenLinksInRemoteRange_LegacyPutRequest ): Promise<{response: http.ClientResponse, body: model.BrokenLinksResponse}>
+    {
+        if (requestObj === null || requestObj === undefined) {
+            throw new Error('Required parameter "requestObj" was null or undefined when calling searchBrokenLinksInRemoteRange_LegacyPut.');
         }
 
         const requestOptions = await requestObj.createRequestOptions(this.configuration);
@@ -1679,7 +1828,7 @@ export class CellsApi {
     }
 
     /// <summary>
-    /// Delete all blank rows that do not contain any data or other objects.
+    /// Delete all blank columns that do not contain any data or other objects.
     /// </summary>
     /// <param name="request">Request. <see cref="RemoveSpreadsheetBlankColumnsRequest" /></param>
     public async removeSpreadsheetBlankColumns(requestObj:model.RemoveSpreadsheetBlankColumnsRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -1759,7 +1908,7 @@ export class CellsApi {
     }
 
     /// <summary>
-    /// Switch rows and columns in the spreadsheet.
+    /// Transposes data in the specified range, switching rows and columns.
     /// </summary>
     /// <param name="request">Request. <see cref="TransposeDataRequest" /></param>
     public async transposeData(requestObj:model.TransposeDataRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -1775,7 +1924,7 @@ export class CellsApi {
     }
 
     /// <summary>
-    /// Switch rows and columns in the spreadsheet.
+    /// Unpivots data from the specified range, converting columns to rows.
     /// </summary>
     /// <param name="request">Request. <see cref="UnpivotRangeRequest" /></param>
     public async unpivotRange(requestObj:model.UnpivotRangeRequest ): Promise<{response: http.ClientResponse, body: Buffer}>
@@ -1791,7 +1940,7 @@ export class CellsApi {
     }
 
     /// <summary>
-    /// Switch rows and columns in the spreadsheet.
+    /// Unpivots data from the specified table, converting columns to rows.
     /// </summary>
     /// <param name="request">Request. <see cref="UnpivotTableRequest" /></param>
     public async unpivotTable(requestObj:model.UnpivotTableRequest ): Promise<{response: http.ClientResponse, body: Buffer}>

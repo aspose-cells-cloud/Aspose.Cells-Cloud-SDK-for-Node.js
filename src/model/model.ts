@@ -390,6 +390,39 @@ export class GoogleDriveStorageFile  extends StorageFile  {
     } 
 }
    
+export class SharedDriveInfo  {
+    /**
+     * Attribute type map
+     */
+    public static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            name: "id",
+            baseName: "Id",
+            type: "string",
+        },
+        {
+            name: "name",
+            baseName: "Name",
+            type: "string",
+        }
+    ];
+    /**
+     * Returns attribute type map
+     */
+    public static getAttributeTypeMap() {
+        return  SharedDriveInfo.attributeTypeMap;
+
+    }
+
+    public id!: string;
+    public name!: string;
+
+    public constructor(init?: Partial< SharedDriveInfo >) {  
+    
+        Object.assign(this, init);
+    } 
+}
+   
 export class AggregateResultByColor  {
     /**
      * Attribute type map
@@ -22237,6 +22270,7 @@ const typeMap = {
     FilesUploadResult,
     StorageFile,
     GoogleDriveStorageFile,
+    SharedDriveInfo,
     AggregateResultByColor,
     BrokenLink,
     CellArea,
@@ -23083,6 +23117,77 @@ export class AggregateCellsByColorRequest  {
 
     public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
 
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/calculate/aggregate/color";
+        const queryParameters: any = {};
+        const formParams: any = {};
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "worksheet", this.worksheet);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "range", this.range);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "operation", this.operation);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "colorPosition", this.colorPosition);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+        if (this.spreadsheet !== undefined) {
+            if (typeof this.spreadsheet === 'string') {
+                if (fs.existsSync(this.spreadsheet)) {
+                    const fileName = path.basename( this.spreadsheet)
+                    formParams[fileName] = fs.createReadStream(this.spreadsheet)
+                }
+            }
+            else {
+                for (var key in this.spreadsheet){
+                    formParams[key] = this.spreadsheet[key];
+                }
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
+            method: "PUT",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
+        (requestOptions as any).formData = formParams;        
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+/// Deprecated: Use String) instead.
+/// This endpoint exists only for backward compatibility with clients that used the misspelled
+/// route calculate/aggergate/color. It will be removed in a future major version.   
+export class AggregateCellsByColor_DeprecatedRequest  {
+    /// Upload spreadsheet file.  
+    public spreadsheet!: any;
+      
+    public worksheet!: string;
+      
+    public range!: string;
+      
+    public operation!: string;
+      
+    public colorPosition!: string;
+    /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
+    public region!: string;
+    /// The password for opening spreadsheet file.  
+    public password!: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< AggregateCellsByColor_DeprecatedRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
         let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/calculate/aggergate/color";
         const queryParameters: any = {};
         const formParams: any = {};
@@ -23206,13 +23311,13 @@ export class MathCalculateRequest  {
     }
 
 }
-   
+/// Calculates a formula expression and returns the result.   
 export class CalculationFormulaRequest  {
     /// Upload spreadsheet file.  
     public spreadsheet!: any;
-      
+    /// The worksheet name where the formula will be evaluated.  
     public worksheet!: string;
-      
+    /// The formula expression to calculate (e.g., "SUM(A1:A10)" or "=A1+B1").  
     public formula!: string;
     /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
     public region!: string;
@@ -23230,12 +23335,12 @@ export class CalculationFormulaRequest  {
         let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/calculate/formula";
         const queryParameters: any = {};
         const formParams: any = {};
-         
+        /// The worksheet name where the formula will be evaluated. 
         // verify required parameter 'worksheet' is not null or undefined
         if (this.worksheet === null || this.worksheet === undefined) {
             throw new Error('Required parameter "worksheet" was null or undefined when calling CalculationFormula.');
         }
-         
+        /// The formula expression to calculate (e.g., "SUM(A1:A10)" or "=A1+B1"). 
         // verify required parameter 'formula' is not null or undefined
         if (this.formula === null || this.formula === undefined) {
             throw new Error('Required parameter "formula" was null or undefined when calling CalculationFormula.');
@@ -27173,11 +27278,11 @@ export class GetMergedCellsInRemotedWorksheetRequest  {
     }
 
 }
-/// Get all merged cell area form a local spreadsheet worksheet.   
+/// Get all merged cell areas from a local spreadsheet worksheet.   
 export class GetMergedCellsInWorksheetRequest  {
     /// Upload spreadsheet file.  
     public spreadsheet!: any;
-      
+    /// The worksheet name to query for merged cells.  
     public worksheet!: string;
     /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
     public region!: string;
@@ -27195,7 +27300,7 @@ export class GetMergedCellsInWorksheetRequest  {
         let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/spreadsheet/mergedcells";
         const queryParameters: any = {};
         const formParams: any = {};
-         
+        /// The worksheet name to query for merged cells. 
         // verify required parameter 'worksheet' is not null or undefined
         if (this.worksheet === null || this.worksheet === undefined) {
             throw new Error('Required parameter "worksheet" was null or undefined when calling GetMergedCellsInWorksheet.');
@@ -27238,7 +27343,7 @@ export class GetMergedCellsInWorksheetRequest  {
     }
 
 }
-   
+/// Accepts all tracked changes (revisions) in the local spreadsheet.   
 export class AcceptAllRevisionsRequest  {
     /// Upload spreadsheet file.  
     public spreadsheet!: any;
@@ -27304,11 +27409,11 @@ export class AcceptAllRevisionsRequest  {
     }
 
 }
-   
+/// Accepts all tracked changes (revisions) in a remote spreadsheet.   
 export class AcceptAllRevisionsInRemoteSpreadsheetRequest  {
-      
+    /// The name of the workbook file.  
     public name!: string;
-      
+    /// The folder path where the workbook is stored.  
     public folder!: string;
     /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
     public storageName!: string;
@@ -27361,7 +27466,7 @@ export class AcceptAllRevisionsInRemoteSpreadsheetRequest  {
     }
 
 }
-/// Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.   
+/// Extracts the structural information of a local spreadsheet as a JSON object.   
 export class GetSpreadsheetStructureRequest  {
     /// Upload spreadsheet file.  
     public spreadsheet!: any;
@@ -27418,11 +27523,11 @@ export class GetSpreadsheetStructureRequest  {
     }
 
 }
-/// Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.   
+/// Extracts the structural information of a remote spreadsheet as a JSON object.   
 export class GetStructureInRemoteSpreadsheetRequest  {
-      
+    /// The name of the workbook file.  
     public name!: string;
-      
+    /// The folder path where the workbook is stored.  
     public folder!: string;
     /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
     public storageName!: string;
@@ -27618,11 +27723,11 @@ export class UnprotectSpreadsheetRequest  {
     }
 
 }
-   
+/// Adds digital signatures to Excel spreadsheets using X.509 certificates (.pfx files) for document authentication and integrity verification.   
 export class SpreadsheetDigitalsignatureRequest  {
     /// Upload spreadsheet file.  
     public spreadsheet!: any;
-      
+    /// The password for the digital certificate (.pfx file).  
     public password!: string;
     /// (Optional) The folder path where the workbook is stored. The default is null.  
     public outPath!: string;
@@ -27642,7 +27747,7 @@ export class SpreadsheetDigitalsignatureRequest  {
         let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/digitalsignature/spreadsheet";
         const queryParameters: any = {};
         const formParams: any = {};
-         
+        /// The password for the digital certificate (.pfx file). 
         // verify required parameter 'password' is not null or undefined
         if (this.password === null || this.password === undefined) {
             throw new Error('Required parameter "password" was null or undefined when calling SpreadsheetDigitalsignature.');
@@ -27686,7 +27791,7 @@ export class SpreadsheetDigitalsignatureRequest  {
     }
 
 }
-   
+/// Generates reports using Smart Marker template technology with JSON data.   
 export class SmartMarkerTemplateRequest  {
     /// Upload smartmarker template json data file.  
     public datafile!: any;
@@ -27785,6 +27890,61 @@ export class SearchAllTextItemsInRemoteSpreadsheetRequest  {
         // verify required parameter 'folder' is not null or undefined
         if (this.folder === null || this.folder === undefined) {
             throw new Error('Required parameter "folder" was null or undefined when calling SearchAllTextItemsInRemoteSpreadsheet.');
+        }
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "folder", this.folder);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "storageName", this.storageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
+            method: "GET",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+/// Deprecated PUT route for String).
+/// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+/// It will be removed in a future major version.   
+export class SearchAllTextItemsInRemoteSpreadsheet_LegacyPutRequest  {
+      
+    public name!: string;
+      
+    public folder!: string;
+    /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
+    public storageName!: string;
+    /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
+    public region!: string;
+    /// The password for opening spreadsheet file.  
+    public password!: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< SearchAllTextItemsInRemoteSpreadsheet_LegacyPutRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/{name}/search/content/all-textitems".replace("{" + "name" + "}", String(this.name));
+        const queryParameters: any = {};
+         
+        // verify required parameter 'folder' is not null or undefined
+        if (this.folder === null || this.folder === undefined) {
+            throw new Error('Required parameter "folder" was null or undefined when calling SearchAllTextItemsInRemoteSpreadsheet_LegacyPut.');
         }
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "folder", this.folder);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "storageName", this.storageName);
@@ -27990,6 +28150,67 @@ export class SearchContentInRemoteSpreadsheetRequest  {
         // const bodyParameter = null;
 
         const requestOptions: request.Options = {
+            method: "GET",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+/// Deprecated PUT route for String).
+/// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+/// It will be removed in a future major version.   
+export class SearchContentInRemoteSpreadsheet_LegacyPutRequest  {
+      
+    public name!: string;
+      
+    public searchText!: string;
+      
+    public ignoringCase!: boolean;
+      
+    public folder!: string;
+    /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
+    public storageName!: string;
+    /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
+    public region!: string;
+    /// The password for opening spreadsheet file.  
+    public password!: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< SearchContentInRemoteSpreadsheet_LegacyPutRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/{name}/search/content".replace("{" + "name" + "}", String(this.name));
+        const queryParameters: any = {};
+         
+        // verify required parameter 'searchText' is not null or undefined
+        if (this.searchText === null || this.searchText === undefined) {
+            throw new Error('Required parameter "searchText" was null or undefined when calling SearchContentInRemoteSpreadsheet_LegacyPut.');
+        }
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "searchText", this.searchText);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "ignoringCase", this.ignoringCase);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "folder", this.folder);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "storageName", this.storageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
             method: "PUT",
             qs: queryParameters,
             uri: localVarPath,
@@ -28009,7 +28230,7 @@ export class SearchContentInRemoteWorksheetRequest  {
     public worksheet!: string;
     /// Specify the search content.  
     public searchText!: string;
-    /// Ignore the text of the search.  
+    /// Ignore the text case of the search. Default is true.  
     public ignoringCase!: boolean;
     /// The folder path where the workbook is stored.  
     public folder!: string;
@@ -28051,6 +28272,69 @@ export class SearchContentInRemoteWorksheetRequest  {
         // const bodyParameter = null;
 
         const requestOptions: request.Options = {
+            method: "GET",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+/// Deprecated PUT route for String).
+/// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+/// It will be removed in a future major version.   
+export class SearchContentInRemoteWorksheet_LegacyPutRequest  {
+      
+    public name!: string;
+      
+    public worksheet!: string;
+      
+    public searchText!: string;
+      
+    public ignoringCase!: boolean;
+      
+    public folder!: string;
+    /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
+    public storageName!: string;
+    /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
+    public region!: string;
+    /// The password for opening spreadsheet file.  
+    public password!: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< SearchContentInRemoteWorksheet_LegacyPutRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/{name}/worksheets/{worksheet}/search/content".replace("{" + "name" + "}", String(this.name)).replace("{" + "worksheet" + "}", String(this.worksheet));
+        const queryParameters: any = {};
+         
+        // verify required parameter 'searchText' is not null or undefined
+        if (this.searchText === null || this.searchText === undefined) {
+            throw new Error('Required parameter "searchText" was null or undefined when calling SearchContentInRemoteWorksheet_LegacyPut.');
+        }
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "searchText", this.searchText);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "ignoringCase", this.ignoringCase);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "folder", this.folder);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "storageName", this.storageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
             method: "PUT",
             qs: queryParameters,
             uri: localVarPath,
@@ -28068,11 +28352,11 @@ export class SearchContentInRemoteRangeRequest  {
     public name!: string;
     /// Specify the search worksheet name.  
     public worksheet!: string;
-    /// Specify the search cell area.  
+    /// Specify the search cell area (e.g., "A1:C10").  
     public cellArea!: string;
     /// Specify the search content.  
     public searchText!: string;
-    /// Ignore the text of the search.  
+    /// Ignore the text case of the search. Default is true.  
     public ignoringCase!: boolean;
     /// The folder path where the workbook is stored.  
     public folder!: string;
@@ -28097,6 +28381,71 @@ export class SearchContentInRemoteRangeRequest  {
         // verify required parameter 'searchText' is not null or undefined
         if (this.searchText === null || this.searchText === undefined) {
             throw new Error('Required parameter "searchText" was null or undefined when calling SearchContentInRemoteRange.');
+        }
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "searchText", this.searchText);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "ignoringCase", this.ignoringCase);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "folder", this.folder);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "storageName", this.storageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
+            method: "GET",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+/// Deprecated PUT route for String).
+/// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+/// It will be removed in a future major version.   
+export class SearchContentInRemoteRange_LegacyPutRequest  {
+      
+    public name!: string;
+      
+    public worksheet!: string;
+      
+    public cellArea!: string;
+      
+    public searchText!: string;
+      
+    public ignoringCase!: boolean;
+      
+    public folder!: string;
+    /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
+    public storageName!: string;
+    /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
+    public region!: string;
+    /// The password for opening spreadsheet file.  
+    public password!: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< SearchContentInRemoteRange_LegacyPutRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content".replace("{" + "name" + "}", String(this.name)).replace("{" + "worksheet" + "}", String(this.worksheet)).replace("{" + "cellArea" + "}", String(this.cellArea));
+        const queryParameters: any = {};
+         
+        // verify required parameter 'searchText' is not null or undefined
+        if (this.searchText === null || this.searchText === undefined) {
+            throw new Error('Required parameter "searchText" was null or undefined when calling SearchContentInRemoteRange_LegacyPut.');
         }
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "searchText", this.searchText);
         localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "ignoringCase", this.ignoringCase);
@@ -28508,6 +28857,62 @@ export class SearchBrokenLinksInRemoteSpreadsheetRequest  {
         // const bodyParameter = null;
 
         const requestOptions: request.Options = {
+            method: "GET",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+/// Deprecated PUT route for String).
+/// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+/// It will be removed in a future major version.   
+export class SearchBrokenLinksInRemoteSpreadsheet_LegacyPutRequest  {
+      
+    public name!: string;
+      
+    public worksheet!: string;
+      
+    public cellArea!: string;
+      
+    public folder!: string;
+    /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
+    public storageName!: string;
+    /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
+    public region!: string;
+    /// The password for opening spreadsheet file.  
+    public password!: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< SearchBrokenLinksInRemoteSpreadsheet_LegacyPutRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/{name}/search/broken-links".replace("{" + "name" + "}", String(this.name));
+        const queryParameters: any = {};
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "worksheet", this.worksheet);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "cellArea", this.cellArea);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "folder", this.folder);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "storageName", this.storageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
             method: "PUT",
             qs: queryParameters,
             uri: localVarPath,
@@ -28537,6 +28942,58 @@ export class SearchBrokenLinksInRemoteWorksheetRequest  {
     public extendQueryParameterMap: any;
 
     public constructor(init?: Partial< SearchBrokenLinksInRemoteWorksheetRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links".replace("{" + "name" + "}", String(this.name)).replace("{" + "worksheet" + "}", String(this.worksheet));
+        const queryParameters: any = {};
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "folder", this.folder);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "storageName", this.storageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
+            method: "GET",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+/// Deprecated PUT route for String).
+/// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+/// It will be removed in a future major version.   
+export class SearchBrokenLinksInRemoteWorksheet_LegacyPutRequest  {
+      
+    public name!: string;
+      
+    public worksheet!: string;
+      
+    public folder!: string;
+    /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
+    public storageName!: string;
+    /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
+    public region!: string;
+    /// The password for opening spreadsheet file.  
+    public password!: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< SearchBrokenLinksInRemoteWorksheet_LegacyPutRequest >) {  
         Object.assign(this, init);
     } 
 
@@ -28589,6 +29046,60 @@ export class SearchBrokenLinksInRemoteRangeRequest  {
     public extendQueryParameterMap: any;
 
     public constructor(init?: Partial< SearchBrokenLinksInRemoteRangeRequest >) {  
+        Object.assign(this, init);
+    } 
+
+    public async createRequestOptions(configuration: Configuration) : Promise<request.Options> {
+
+        let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/broken-links".replace("{" + "name" + "}", String(this.name)).replace("{" + "worksheet" + "}", String(this.worksheet)).replace("{" + "cellArea" + "}", String(this.cellArea));
+        const queryParameters: any = {};
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "folder", this.folder);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "storageName", this.storageName);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "region", this.region);
+        localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, "password", this.password);
+        if(this.extendQueryParameterMap !== undefined){
+            for (var key in this.extendQueryParameterMap){
+                localVarPath = addQueryParameterToUrl(localVarPath, queryParameters, key, this.extendQueryParameterMap[key]);
+            }
+        }
+
+
+        // const bodyParameter = null;
+
+        const requestOptions: request.Options = {
+            method: "GET",
+            qs: queryParameters,
+            uri: localVarPath,
+            json: true,
+        };
+
+        return Promise.resolve(requestOptions);
+
+    }
+
+}
+/// Deprecated PUT route for String).
+/// This endpoint exists only for backward compatibility with clients that used the PUT verb on this read-only route.
+/// It will be removed in a future major version.   
+export class SearchBrokenLinksInRemoteRange_LegacyPutRequest  {
+      
+    public name!: string;
+      
+    public worksheet!: string;
+      
+    public cellArea!: string;
+      
+    public folder!: string;
+    /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.  
+    public storageName!: string;
+    /// Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.  
+    public region!: string;
+    /// The password for opening spreadsheet file.  
+    public password!: string;
+    /// extend query parameter
+    public extendQueryParameterMap: any;
+
+    public constructor(init?: Partial< SearchBrokenLinksInRemoteRange_LegacyPutRequest >) {  
         Object.assign(this, init);
     } 
 
@@ -30017,7 +30528,7 @@ export class RemoveSpreadsheetBlankRowsRequest  {
     }
 
 }
-/// Delete all blank rows that do not contain any data or other objects.   
+/// Delete all blank columns that do not contain any data or other objects.   
 export class RemoveSpreadsheetBlankColumnsRequest  {
     /// Upload spreadsheet file.  
     public spreadsheet!: any;
@@ -30392,13 +30903,13 @@ export class FlipDataRequest  {
     }
 
 }
-/// Switch rows and columns in the spreadsheet.   
+/// Transposes data in the specified range, switching rows and columns.   
 export class TransposeDataRequest  {
     /// Upload spreadsheet file.  
     public spreadsheet!: any;
-    /// The worksheet name.  
+    /// The worksheet name containing the data to transpose.  
     public worksheet!: string;
-    /// A specified data range  
+    /// The cell range to transpose (e.g., "A1:C10").  
     public cellArea!: string;
     /// (Optional) The folder path where the workbook is stored. The default is null.  
     public outPath!: string;
@@ -30420,12 +30931,12 @@ export class TransposeDataRequest  {
         let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/transpose";
         const queryParameters: any = {};
         const formParams: any = {};
-        /// The worksheet name. 
+        /// The worksheet name containing the data to transpose. 
         // verify required parameter 'worksheet' is not null or undefined
         if (this.worksheet === null || this.worksheet === undefined) {
             throw new Error('Required parameter "worksheet" was null or undefined when calling TransposeData.');
         }
-        /// A specified data range 
+        /// The cell range to transpose (e.g., "A1:C10"). 
         // verify required parameter 'cellArea' is not null or undefined
         if (this.cellArea === null || this.cellArea === undefined) {
             throw new Error('Required parameter "cellArea" was null or undefined when calling TransposeData.');
@@ -30471,15 +30982,15 @@ export class TransposeDataRequest  {
     }
 
 }
-/// Switch rows and columns in the spreadsheet.   
+/// Unpivots data from the specified range, converting columns to rows.   
 export class UnpivotRangeRequest  {
     /// Upload spreadsheet file.  
     public spreadsheet!: any;
-    /// The worksheet name.  
+    /// The worksheet name containing the data to unpivot.  
     public worksheet!: string;
-    /// A specified data range  
+    /// The cell range to unpivot (e.g., "A1:D10").  
     public cellArea!: string;
-      
+    /// If true, empty cells are skipped in the output. Default is true.  
     public skipEmptyValue!: boolean;
     /// (Optional) The folder path where the workbook is stored. The default is null.  
     public outPath!: string;
@@ -30501,12 +31012,12 @@ export class UnpivotRangeRequest  {
         let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/unpivot/range";
         const queryParameters: any = {};
         const formParams: any = {};
-        /// The worksheet name. 
+        /// The worksheet name containing the data to unpivot. 
         // verify required parameter 'worksheet' is not null or undefined
         if (this.worksheet === null || this.worksheet === undefined) {
             throw new Error('Required parameter "worksheet" was null or undefined when calling UnpivotRange.');
         }
-        /// A specified data range 
+        /// The cell range to unpivot (e.g., "A1:D10"). 
         // verify required parameter 'cellArea' is not null or undefined
         if (this.cellArea === null || this.cellArea === undefined) {
             throw new Error('Required parameter "cellArea" was null or undefined when calling UnpivotRange.');
@@ -30553,15 +31064,15 @@ export class UnpivotRangeRequest  {
     }
 
 }
-/// Switch rows and columns in the spreadsheet.   
+/// Unpivots data from the specified table, converting columns to rows.   
 export class UnpivotTableRequest  {
     /// Upload spreadsheet file.  
     public spreadsheet!: any;
-    /// The worksheet name.  
+    /// The worksheet name containing the table to unpivot.  
     public worksheet!: string;
-    /// A specified data range  
+    /// The zero-based index of the table (ListObject) to unpivot.  
     public index!: number;
-      
+    /// If true, empty cells are skipped in the output. Default is true.  
     public skipEmptyValue!: boolean;
     /// (Optional) The folder path where the workbook is stored. The default is null.  
     public outPath!: string;
@@ -30583,12 +31094,12 @@ export class UnpivotTableRequest  {
         let localVarPath = configuration.getApiBaseUrl() + "v4.0/cells/unpivot/table";
         const queryParameters: any = {};
         const formParams: any = {};
-        /// The worksheet name. 
+        /// The worksheet name containing the table to unpivot. 
         // verify required parameter 'worksheet' is not null or undefined
         if (this.worksheet === null || this.worksheet === undefined) {
             throw new Error('Required parameter "worksheet" was null or undefined when calling UnpivotTable.');
         }
-        /// A specified data range 
+        /// The zero-based index of the table (ListObject) to unpivot. 
         // verify required parameter 'index' is not null or undefined
         if (this.index === null || this.index === undefined) {
             throw new Error('Required parameter "index" was null or undefined when calling UnpivotTable.');

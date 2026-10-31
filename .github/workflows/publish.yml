@@ -1,0 +1,33 @@
+name: Publish Package to npm
+
+on:
+  release:
+    types: [published] 
+  workflow_dispatch:
+
+permissions:
+  id-token: write      
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'         
+      - name: Upgrade npm for OIDC
+        run: npm install -g npm@latest
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (if needed)
+        run: npm run build --if-present
+
+      - name: Publish to npm
+        run: npm publish --access public
